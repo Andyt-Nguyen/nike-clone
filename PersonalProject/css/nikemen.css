@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+	font-family: "Fjalla One"
+}
+.nikemen-header{
+	height: 20vh;
+	width: 100%;
+	background: #fff;
+	top:8%;
+	z-index: 999;
+}
+.nikemen-title{
+	position: absolute;
+	left:45%;
+	top:80px;
+	font-size: 3.75em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Fjalla One'
+}
+
+.nikemen-nav {
+	position: absolute;
+	left: 25%;
+	top: 180px;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.nikemen-nav a {
+	text-decoration: none;
+	color: #666;
+	padding-left: 39px;
+	padding-right: 39px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.border-men {
+	border-left: 2px solid #666;
+	border-right: 2px solid #666;
+}
+
+.nikemen-video {
+	position: relative;
+	object-fit: fill;
+	width: 100vw;
+	height: 90vh;
+	z-index: 0;
+}
+
+.nikemen-vid-cap {
+	position: absolute;
+	z-index: 5;
+	bottom: 20%;
+	right: 4%;
+	font-family: "Fjalla One";
+	color: #fff;
+	/*197 px font*/
+
+}
+
+.nikemen-vid-cap h1{
+	font-size: 49px;
+	text-transform: uppercase;
+	color: white;
+}
+
+#para-men {
+	padding-left: 55px;
+}
+
+.nikemen-btn {
+	position: absolute;
+	right: 5%;
+	bottom:10%;
+	position: absolute;
+	padding: 14px;
+	color: black;
+	font-size: 12px;
+	font-family: 'Fjalla One';
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background: white;
+}
+
+
+/*Section With Men Shoes*/
+.shop-men-shoes{
+	position: relative;
+	height: 70vh;
+}
+
+.nike-men-text {
+	position: absolute;
+	width: 223px;
+	left: 3%;
+	top: 18%;
+}
+
+.nike-men-text .nike-men-title{
+	font-size: 35px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'Fjalla One';
+}
+
+.nike-men-text .nike-men-p {
+	font-size: 13px;
+	font-family: 'Fjalla One';
+
+}
+
+.nike-men-shoes {
+	position: absolute;
+	left:15%;
+	height: 90vh;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.nike-men-shoes img{
+	padding: 30px;
+	height: 200px;
+	width: 100%;
+}
+
+.nike-men-shoes h3{
+	font-size: 15px;
+	font-family: 'Fjalla One';
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+
+.shop-men-shoes a {
+	color: #000;
+}
+
+.shop-now-men{
+	position: relative;
+	margin-top: 116px;
+}
+
+/*Need To Hide Button then show*/
+
+.shop-now-men .nikemen-btn {
+	visibility: visible;
+	position: absolute;
+	right: 46%;
+	bottom: 45%;
+}
+
+.shop-now-men img:hover .shop-now-men .nikemen-btn{
+	visibility: visible;
+}
+
+/**/
+
+.free-rn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 20%;
+	width: 100%;
+	padding-top: 2%;
+}
+
+.free-rn a {
+	color: #000;
+}
+
+.free-rn h3 {
+	text-transform: uppercase;
+	font-family: 'Fjalla One';
+}
+
+/*Add Buttons bro*/
+.men-double-image {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+/**/
+
+.cool-comfort {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.cool-left-left {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	border-right: 2px solid #ccc;
+}
+
+.cool-right-right {
+	flex: 1;
+	text-align: center;
+}
+
+.cool-left-left h3, .cool-right-right h3{
+	font-size: 18px;
+	color: black;
+}
+
+.cool-left-left span, .cool-right-right span {
+	font-size: 12px;
+	color: black;
+}
+
+.cool-left {
+	width: 70%;
+	text-align: center;
+}
+
+/*Add button brosiden*/
+.cp7 {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+/*206px*/
+.cp7-box {
+	display: flex;
+	justify-content: center;
+}
+.cp7-desc {
+	padding: 30px;
+	width: 30%;
+	height: 25.1vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cp7-desc a h4 {
+	color: #000;
+	font-family: 'Fjalla One';
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.cp7-desc a p {
+	color: #000;
+	font-family: 'Fjalla One';
+	font-size: 13px;
+	text-align: center;
+	text-transform: capitalize;
+}
+/*600px*/
+.nike-plus-sect {
+	width: 100%;
+	height: 70vh;
+	background: #f0f0f0;
+}
+
+.intro-nike-plus {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.intro-nike-desc {
+	width: 100%;
+}
+
+.nike-plus-apps {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.plus-apps {
+	padding-top: 10px;
+	padding-left: 100px;
+	padding-right: 100px;
+	border: 8px solid #f0f0f0;
+}
+
+.nike-plus-apps h5{
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nike-plus-apps p {
+	font-size: 13px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	text-transform: capitalize;
+}
+
+.social-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 50px;
+	text-transform: uppercase;
+}
+
+.social-title h5 {
+	font-size: 20px;
+}
+
+.social-med{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.social-med a img {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nike-mens-categ {
+	width: 100%;
+	height: 20vh;
+}
+
+.mens-categories {
+	display: flex;
+	justify-content: space-around;
+}
+
+.m-categ-display {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.m-categ-display h5 {
+	font-size: 17px;
+}
+
+.m-categ-display a {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #575859;
+}
+
+.mens-categories-box {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+.mens-clothing, .mens-gear, .mens-featured, .mens-shoes{
+	border-left: 2px solid #ccc;
+	padding-left: 10px;
+	height: 24vh;
+	border-bottom: 8px solid rgba(82, 83, 84,.4);
+	border-bottom-left-radius: 5em;
+}

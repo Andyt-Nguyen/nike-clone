@@ -1,0 +1,157 @@
+<section class="nike-women-page">
+
+	<!-- NikeWomen Header -->
+	<div class="nikewomen-header">
+		<div class="women-title">
+			<h1>NikeWomen</h1>
+		</div>
+		<div class="women-categ">
+			<a href="#" class="women-space">Shoes</a>
+			<a href="#" class="women-line">Clothing</a>
+			<a href="#" class="women-shorts-header">Shorts</a>
+			<a href="#" class="women-line">New Arrivals</a>
+			<a href="#" class="plus-size-line">Plus Size</a>
+		</div>
+	</div>
+
+	<!-- NikeWomen Video-->
+	<section class="nikewomen-video-sect">
+		<video class="nikewomen-video" autoplay="true" loop muted poster="css/images/nikewomen/nikewomenposter.png">
+			<source src="css/images/nikewomen/nikewomen.mp4" type="video/mp4">
+		</video>
+
+		<div class="nikewomen-video-cap">
+			<h1>Stay restless</h1>
+			<p>Spring into summer with new styles designed to take on warmer days.</p>
+			<button class="women-shop-btn">Shop Now</button>
+		</div>
+	</section>
+
+<!-- Women's Latest Shoes -->
+	<section class="women-latest-shoes">
+		<h1>Latest Shoes</h1>
+		<div class="w-latest-shoes">
+			<div class="repeat-lates-shoes" ng-repeat="shoes in nikeShoes">
+				<img ng-src="{{shoes.img}}" alt="">
+				<h4>{{shoes.name}}</h4>
+				<p>{{shoes.desc}}</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Women's Featured -->
+
+	<section class="women-featured">
+		<h1>Featured</h1>
+		<div class="women-featured-pics">
+			<img src="css/images/nikewomen/featured1.png" alt="">
+			<img src="css/images/nikewomen/featured2.png" alt="">
+		</div>
+		<div class="women-featured-text">
+
+			<div class="w-featured-1-text w-f-text">
+				<h1>NIKE AIR MAX LD-ZERO</h1>
+				<p>Inspired by a vintage classic to deliver comfort and style.</p>
+				<button class="w-featured-btn">Shop Now</button>
+			</div>
+
+			<div class="w-featured-2-text w-f-text">
+				<h1>NIKE SPORTSWEAR TECH FLEECE DRESS</h1>
+				<p>Comfy chic for the street.</p>
+				<button class="w-featured-btn">Shop Now</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Shop By -->
+	<section class="w-shop-by-sect">
+		<h1>Shop By</h1>
+
+		<div class="w-shop-by-pics">
+			<img src="css/images/nikewomen/pants.png" alt="">
+			<img src="css/images/nikewomen/sportbra.png" alt="">
+			<img src="css/images/nikewomen/yoga.png" alt="">
+		</div>
+	</section>
+
+	<section class="nike-mens-categ">
+		<div class="mens-categories-box">
+			<div class="mens-categories">
+
+				<div class="mens-shoes m-categ-display">
+					<h5>Women's Shoes</h5>
+					<a href="#">All Men's Shoes</a>
+					<a href="#">Running</a>
+					<a href="#">Basketball</a>
+					<a href="#">Tennis</a>
+				</div>
+
+				<div class="mens-clothing m-categ-display">
+					<h5>Women's Clothing</h5>
+					<a href="#">All Women's Clothing</a>
+					<a href="#">Sports Bra's</a>
+					<a href="#">Tops & T-Shirts</a>
+					<a href="#">Shorts</a>
+				</div>
+
+				<div class="mens-gear m-categ-display">
+					<h5>Accessories & Equipment</h5>
+					<a href="#">Accessories & Equipment</a>
+					<a href="#">Bags & Backpacks</a>
+					<a href="#">Hats & Caps</a>
+					<a href="#">Gloves</a>
+				</div>
+
+				<div class="mens-featured m-categ-display">
+					<h5>Featured</h5>
+					<a href="#">Sport Bra Shop</a>
+					<a href="#">Bra Fit Guide</a>
+					<a href="#">Tight Guide</a>
+					<a href="#">Mother's Day Gift</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="nike-app">
+
+		<h1>Tools to take your fitness further</h1>
+		<div class="nike-app-pics">
+			<img src="css/images/nikewomen/nikeapp1.png" alt="">
+			<img src="css/images/nikewomen/nikeapp2.png" alt="">
+		</div>
+
+		<div class="intro-apps">
+			<h1>Introducing Nike+</h1>
+			<p>Experience everything Nike+ has to offer through Nike.com and our four apps.</p>
+		</div>
+
+		<div class="nike-app-container">
+			<div class="nike-app-apps">
+				<div class="nike-w-apps" ng-repeat="app in nikeApps">
+					<img ng-src="{{app.img}}" alt="">
+					<h4>{{app.name}}</h4>
+					<p>{{app.desc}}</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-nike-follow-container">
+
+			<div class="w-follow-title">
+				<h1>Follow nike women</h1>
+			</div>
+
+			<div class="w-follow-apps-container">
+				<div class="w-follow-app" ng-repeat="app in nikeFollow">
+					<img ng-src="{{app.img}}" alt="">
+				</div>
+			</div>
+
+
+		</div>
+
+	</section>
+
+	<nike-footer></nike-footer>
+</section>

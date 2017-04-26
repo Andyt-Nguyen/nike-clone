@@ -16,6 +16,11 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: 'views/women.html',
 		controller: "NikeWomenController"
 	})
+	.state('boys', {
+		url: '/boys',
+		templateUrl: 'views/boys.html',
+		controller: 'NikeBoysController'
+	})
 
 	$urlRouterProvider
 	.otherwise('/')

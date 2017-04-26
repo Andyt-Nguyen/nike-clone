@@ -3,63 +3,12 @@
 
 /*NikeWomen Header*/
 .nike-women-page {
+	padding-top: 2%;
 	width: 100%;
-	height: 100vh;
 	font-family: "Lato"
+
 }
 
-.nikewomen-header {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 5%;
-}
-
-.women-title h1{
-	font-family: "Fjalla One";
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #000;
-	font-size: 47px;
-	text-align: center;
-}
-
-.women-categ {
-	padding-bottom: 70px;
-}
-
-.women-categ a{
-	font-size: 14px;
-	color:#4f5051;
-	text-decoration: none;
-}
-.women-line {
-	border-left: 2px solid #ccc;
-	border-right: 2px solid #ccc;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.women-categ {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 50%;
-	text-align: center;
-}
-
-.women-space {
-	padding-right: 20px;
-}
-
-.plus-size-line {
-	padding-left: 20px;
-}
-
-.women-shorts-header {
-	padding-left: 20px;
-	padding-right: 20px;
-}
 /*Women Header*/
 
 
@@ -104,7 +53,7 @@
 	text-align: right;
 	margin-left: 60%;
 	padding: 10px 20px 10px 20px;
-	color: black;
+	color: #252525;
 	font-size: 12px;
 	font-family: 'Fjalla One';
 	border: 2px solid #fff;
@@ -271,7 +220,7 @@
 	display: flex;
 	justify-content: center;
 	padding-top: 30px;
-	color: #000;
+	color: #252525;
 }
 
 .w-follow-apps-container {

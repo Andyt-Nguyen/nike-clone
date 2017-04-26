@@ -56,5 +56,15 @@ NikeApp.service('NikeService',['$http', function($http){
 			{img:"css/images/nikewomen/tumblr.png"}
 		];
 
+		//Boys Shoes Section
+		 this.bNikeShoes =
+		 [
+			 {title: "Running", img: "css/images/nikebpics/running.png"},
+			 {title: "Basketball", img: "css/images/nikebpics/basketball.png"},
+			 {title: "Soccer", img: "css/images/nikebpics/soccer.png"},
+			 {title: "Lifestyle", img: "css/images/nikebpics/lifestyle.png"},
+			 {title: "Training", img: "css/images/nikebpics/training.png"},
+			 {title: "Jordan", img: "css/images/nikebpics/jordan.png"}
+		 ];
 
-}]);
+}])

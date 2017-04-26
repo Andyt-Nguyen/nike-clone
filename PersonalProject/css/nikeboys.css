@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*Nike Boys Header*/
+.nike-boys-container {
+	font-family: "Lato";
+	color: #252525;
+}
+.nike-boys-header-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nike-boys-nav {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.boys-cloth {
+	text-align: center;
+	flex: 1;
+}
+
+.boys-clothing-nav {
+	border-left: 2px solid #999999;
+	border-right: 2px solid #999999;
+}
+
+.nike-boys-header h1 {
+	font-size: 51px;
+	font-family: "Fjalla One";
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 15%;
+	padding-bottom: 35px;
+}
+.nike-boys-nav a {
+	align-self: center;
+	text-decoration: none;
+	color: #999999;
+	font-size: 12px
+}
+
+/*Nike Boys Header*/
+
+/*Nike Boys Poster And Caps*/
+.nike-boys-poster {
+	padding-top: 50px;
+	position: relative;
+}
+
+.kids-poster-title {
+	width: 17%;
+	position: absolute;
+	right: 1%;
+	bottom: 40%;
+	color: white;
+}
+
+.kids-title-cap {
+	font-family: "Fjalla One";
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 42px;
+}
+
+.kids-para-cap {
+	font-family: "Lato";
+	font-size: 14px;
+}
+
+.kids-button {
+	position: absolute;
+	right: 5%;
+	bottom: 30%;
+	padding: 10px 20px 10px 20px;
+	color: #252525;
+	font-size: 12px;
+	font-family: 'Fjalla One';
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background: white;
+}
+/*Nike Boys Poster And Caps*/
+
+
+
+/*Kids Shop By Size*/
+.boys-size {
+	display: flex;
+	justify-content: space-around;
+}
+
+.boys-size-title {
+	flex:1;
+	text-align: center;
+}
+
+.title-boys-size {
+	padding-top: 30px;
+	width: 30%;
+	margin-left: 38%;
+}
+
+.boys-size-title h2 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Fjalla One';
+	color: #252525;
+	text-align: left;
+}
+
+.boys-size-title p {
+	padding-top: 15px;
+	font-family: 'Lato';
+	font-weight: 600;
+	color:#999999;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+
+
+
+
+
+.boys-infant-toddler {
+	flex:1;
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.boys-infant {
+	border-left: 2px solid #999999;
+	border-right: 2px solid #999999;
+}
+
+.boys-infant-toddler img {
+	margin:0;
+	padding: 0;
+	width:45px;
+	height:60px;
+}
+
+.boys-infant-toddler-text {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+
+}
+
+.boys-infant-toddler-text h4 {
+	font-family: "Fjalla One";
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.mini-text {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	text-transform: uppercase;
+	font-family: "Fjalla One";
+	color: #999999;
+	font-weight: 700;
+}
+
+.tods-text {
+	padding-right: 10px;
+}
+
+.boys-little-kids {
+	border-right: 2px solid #999999;
+}
+
+
+/*Kids Shop By Size*/
+
+
+/* Find The Perfect Pair*/
+.find-the-perfect-title {
+	width: 100%;
+	font-size: 28px;
+	border: 2px solid blue;
+}
+
+.find-the-perfect-title h1 {
+	letter-spacing: 1px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Fjalla One";
+	text-align: center;
+}

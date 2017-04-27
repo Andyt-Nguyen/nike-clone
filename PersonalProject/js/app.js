@@ -4,27 +4,31 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
 	.state('home',{
 		url:'/',
-		templateUrl:'./views/home.html'
+		templateUrl:'./views/mainviews/home.html'
 	})
 	.state('men',{
 		url:'/men',
-		templateUrl: './views/men.html',
+		templateUrl: './views/mainviews/men.html',
 		controller: 'NikeMenController'
 	})
 	.state('women',{
 		url: '/women',
-		templateUrl: './views/women.html',
+		templateUrl: './views/mainviews/women.html',
 		controller: "NikeWomenController"
 	})
 	.state('boys', {
 		url: '/boys',
-		templateUrl: './views/boys.html',
+		templateUrl: './views/mainviews/boys.html',
 		controller: 'NikeBoysController'
 	})
 	.state('girls',{
 		url:'/girls',
-		templateUrl: './views/girls.html',
+		templateUrl: './views/mainviews/girls.html',
 		controller: 'NikeGirlController'
+	})
+	.state('mproduct', {
+		url:'/mens-shoes',
+		templateUrl: './views/productsviews/menshoes.html'
 	})
 	$urlRouterProvider
 	.otherwise('/')

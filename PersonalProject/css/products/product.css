@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+/* The Products */
+.the-products {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*---------------- Left Hand Column ---------------- */
+
+
+.left-hand-column {
+	padding-left: 25px;
+	width: 100%;
+	color: black;
+}
+
+.left-hand-column h3 {
+	font-family: "Fjalla One";
+	text-transform: uppercase;
+}
+
+.hr-line {
+	width: 85%;
+}
+
+
+/* Shoe Shopping */
+.shop-prods {
+	display: flex;
+	flex-direction: column;
+}
+
+.shop-prods-categ {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+}
+
+.shop-prods-categ a {
+	font-family: 'Lato';
+	text-decoration: none;
+	color: black;
+	padding-bottom: 5px;
+}
+
+.shop-prods-categ a:hover {
+	color: #c6c6c6;
+}
+.shop-prods-categ a {
+	width: 50%;
+}
+.shop-prods-categ h5 {
+	font-family: "Fjalla One";
+	text-transform: uppercase;
+	border: 2px solid blue;
+	height: 7vh;
+}
+
+.shop-prods-categ span {
+	font-weight: 600;
+}
+
+/*---------------- Left Hand Column ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- Right Hand Column ---------------- */
+.shopping-poster-pic {
+	position: relative;
+}
+
+.shopping-poster-text {
+	position: absolute;
+	bottom: 10%;
+	left: 3%;
+	color: white;
+	text-transform: uppercase;
+}
+
+.shopping-poster-text h1{
+	font-family: "Fjalla One";
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+/*---------------- Right Hand Column ---------------- */

@@ -1,55 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-body {
+.video-men {
+	padding-top: 2%;
 	font-family: "Fjalla One"
 }
 
-.video-men {
-	padding-top: 2%;
-}
-
-.nikemen-header{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 20vh;
-	width: 100%;
-	background: #fff;
-}
-
-.nikemen-title{
-	font-size: 47px;
-	text-transform: uppercase;
-	font-family: 'Fjalla One';
-	color: #252525;
-}
-
-.nikemen-nav {
-	width: 50%;
-	display: flex;
-	width: 50%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	justify-content: space-around;
-}
-
-.adult-nav-text {
-	flex: 1;
-	text-align: center;
-	text-decoration: none;
-	color: #666;
-	font-size: 14px;
-	text-transform: capitalize;
-	font-family: 'Lato';
-}
-
-.adult-border {
-	border-left: 2px solid #666;
-	border-right: 2px solid #666;
-}
-
-
+/* Nike Men Video Section */
 .nikemen-video {
 	position: relative;
 	object-fit: fill;
@@ -65,8 +22,6 @@ body {
 	right: 4%;
 	font-family: "Fjalla One";
 	color: #fff;
-	/*197 px font*/
-
 }
 
 .nikemen-vid-cap h1{
@@ -93,9 +48,16 @@ body {
 	text-transform: uppercase;
 	background: white;
 }
+/* Nike Men Video Section */
 
 
-/*Section With Men Shoes*/
+
+
+/*Find The Right Shoe For Your Sport*/
+.shop-men-shoes a {
+	color: #252525;
+}
+
 .shop-men-shoes{
 	position: relative;
 	height: 70vh;
@@ -148,17 +110,17 @@ body {
 	text-decoration: none;
 	color: #000;
 }
+/*Find The Right Shoe For Your Sport*/
 
-.shop-men-shoes a {
-	color: #252525;
-}
 
+
+/* Poster With Hover Shop Now */
 .shop-now-men{
 	position: relative;
 	margin-top: 116px;
 }
+/*--Need To Hide Button then show--*/
 
-/*Need To Hide Button then show*/
 
 .shop-now-men .nikemen-btn {
 	visibility: visible;
@@ -190,14 +152,19 @@ body {
 	text-transform: uppercase;
 	font-family: 'Fjalla One';
 }
+/* Poster With Hover Shop Now */
 
-/*Add Buttons bro*/
+
+
+
+/* Targeted Cooling and Comfort Nike Flyknit */
+
+/*--Add Buttons bro--*/
 .men-double-image {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-/**/
 
 .cool-comfort {
 	width: 100%;
@@ -234,14 +201,16 @@ body {
 	text-align: center;
 }
 
-/*Add button brosiden*/
+
+
+/* CR7 CHAPTER 4 MERCURIAL SUPERFLY */
+/*--Add button brosiden--*/
 .cp7 {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 }
 
-/*206px*/
 .cp7-box {
 	display: flex;
 	justify-content: center;
@@ -268,7 +237,10 @@ body {
 	text-align: center;
 	text-transform: capitalize;
 }
-/*600px*/
+
+
+
+/* Nike Plus App */
 .nike-plus-sect {
 	width: 100%;
 	height: 70vh;
@@ -312,6 +284,7 @@ body {
 	text-transform: capitalize;
 }
 
+/* Social Network Follow */
 .social-title{
 	display: flex;
 	flex-direction: row;
@@ -334,43 +307,5 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-.nike-mens-categ {
-	width: 100%;
-	height: 20vh;
-}
-
-.mens-categories {
-	display: flex;
-	justify-content: space-around;
-}
-
-.m-categ-display {
-	display: flex;
-	flex-direction: column;
-
-}
-
-.m-categ-display h5 {
-	font-size: 17px;
-}
-
-.m-categ-display a {
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	color: #575859;
-}
-
-.mens-categories-box {
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 3%;
-}
-
-.mens-clothing, .mens-gear, .mens-featured, .mens-shoes{
-	border-left: 2px solid #ccc;
-	padding-left: 10px;
-	height: 24vh;
-	border-bottom: 8px solid rgba(82, 83, 84,.4);
-	border-bottom-left-radius: 5em;
-}
+/* Social Network Follow */
+/* Nike Plus App */

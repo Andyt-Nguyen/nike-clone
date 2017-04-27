@@ -1,44 +1,95 @@
-/*Nike css is what some views have in common*/
+/*This css file is what some views share*/
 
 
-/*Categories*/
-.categ {
+
+
+/* M-W-Category Nav */
+.adult-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 20vh;
+	width: 100%;
+	background: #fff;
+}
+
+.adult-title{
+	font-size: 47px;
+	text-transform: uppercase;
+	font-family: 'Fjalla One';
+	color: #252525;
+}
+
+.adult-nav {
+	width: 50%;
+	display: flex;
+	width: 50%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content: space-around;
+}
+
+.adult-nav-text {
+	flex: 1;
+	text-align: center;
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-family: 'Lato';
+}
+
+.adult-border {
+	border-left: 2px solid #666;
+	border-right: 2px solid #666;
+}
+/* M-W-Category Nav */
+
+
+
+
+
+
+
+
+/* M-W-B-G-Categories */
+.nike-a-categ {
 	width: 100%;
 	height: 20vh;
 }
 
-.categories-box {
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 3%;
-}
-
-.categories {
+.a-categories {
 	display: flex;
 	justify-content: space-around;
 }
 
-.categ-display {
+.a-categ-display {
 	display: flex;
 	flex-direction: column;
 
 }
 
-.categ-display h5 {
+.a-categ-display h5 {
 	font-size: 17px;
 }
 
-.categ-display a {
+.a-categ-display a {
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	color: #575859;
 }
 
+.a-categories-box {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
+}
 
-.a-clothing, .a-gear, .a-featured, .a-shoes{
+.a-shoes, .a-clothing, .a-gear, .a-featured{
 	border-left: 2px solid #ccc;
 	padding-left: 10px;
 	height: 24vh;
 	border-bottom: 8px solid rgba(82, 83, 84,.4);
 	border-bottom-left-radius: 5em;
 }
+/* M-W-B-G-Categories*/

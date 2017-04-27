@@ -2,246 +2,44 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 /*Nike Boys Header*/
-.nike-boys-container {
+.nike-kids-container {
 	font-family: "Lato";
+	padding-top: 2%;
 	color: #252525;
 }
-.nike-boys-header-container {
+
+.nike-kids-header-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.nike-boys-nav {
+.nike-kids-nav {
 	width: 50%;
 	display: flex;
 	justify-content: space-around;
 }
 
-.boys-cloth {
+.kids-cloth {
 	text-align: center;
 	flex: 1;
 }
 
-.boys-clothing-nav {
+.kids-clothing-nav {
 	border-left: 2px solid #999999;
 	border-right: 2px solid #999999;
 }
 
-.nike-boys-header h1 {
+.nike-kids-header h1 {
 	font-size: 51px;
 	font-family: "Fjalla One";
-	font-weight: 700;
 	text-transform: uppercase;
-	padding-top: 15%;
 	padding-bottom: 35px;
 }
-.nike-boys-nav a {
+.nike-kids-nav a {
 	align-self: center;
 	text-decoration: none;
 	color: #999999;
-	font-size: 12px
-}
-/*Nike Boys Header*/
-
-
-
-/*Nike Boys Poster And Caps*/
-.nike-boys-poster {
-	padding-top: 50px;
-	position: relative;
-}
-
-.kids-poster-title {
-	width: 17%;
-	position: absolute;
-	right: 1%;
-	bottom: 40%;
-	color: white;
-}
-
-.kids-title-cap {
-	font-family: "Fjalla One";
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 42px;
-}
-
-.kids-para-cap {
-	font-family: "Lato";
 	font-size: 14px;
-}
-
-.kids-button {
-	position: absolute;
-	right: 5%;
-	bottom: 30%;
-	padding: 10px 20px 10px 20px;
-	color: #252525;
-	font-size: 12px;
-	font-family: 'Fjalla One';
-	border: 2px solid #fff;
-	border-radius: 5px;
-	text-transform: uppercase;
-	background: white;
-}
-/*Nike Boys Poster And Caps*/
-
-
-
-/*Kids Shop By Size*/
-.kids-size {
-	display: flex;
-	justify-content: space-around;
-}
-
-.kids-size-title {
-	flex:1;
-	text-align: center;
-}
-
-.title-kids-size {
-	padding-top: 30px;
-	width: 30%;
-	margin-left: 38%;
-}
-
-.kids-size-title h2 {
-	padding: 0;
-	margin: 0;
-	text-transform: uppercase;
-	font-family: 'Fjalla One';
-	color: #252525;
-	text-align: left;
-}
-
-.kid-shoe p {
-	padding-top: 15px;
 	font-family: 'Lato';
-	font-weight: 600;
-	color:#999999;
-	text-transform: uppercase;
-	font-size: 12px;
-}
-
-.kids-infant-toddler {
-	flex:1;
-	display: flex;
-	justify-content: center;
-	padding-top: 30px;
-}
-
-.kids-infant {
-	border-left: 2px solid #e7e7e7;
-	border-right: 2px solid #e7e7e7;
-}
-
-.kids-infant-toddler img {
-	margin:0;
-	padding: 0;
-	width:45px;
-	height:60px;
-}
-
-.kids-infant-toddler-text {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 0;
-	padding-left: 20px;
-
-}
-
-.kids-infant-toddler-text h4 {
-	font-family: "Fjalla One";
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.mini-text {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	justify-content: space-around;
-	text-transform: uppercase;
-	font-family: "Fjalla One";
-	color: #999999;
-	font-weight: 700;
-}
-
-.tods-text {
-	padding-right: 10px;
-}
-
-.kids-little-kids {
-	border-right: 2px solid #e7e7e7;
-}
-/*Kids Shop By Size*/
-
-
-
-
-/* Find The Perfect Pair*/
-.find-the-perfect {
-	padding-top: 5%;
-}
-.find-the-perfect-title {
-	width: 100%;
-	font-size: 28px;
-	padding-bottom: 2%;
-}
-
-.find-the-perfect-title h1 {
-	letter-spacing: 1px;
-	font-size: 24px;
-	text-transform: uppercase;
-	font-family: "Fjalla One";
-	text-align: center;
-}
-
-.shoe-pic-kids {
-	justify-content: space-between;
-	display: flex;
-
-}
-
-.kid-shoe {
-	background: #ebebeb;
-	text-align: center;
-}
-
-.shoe-pic-kids p{
-	padding-top: 27px;
-	font-family: "Lato";
-	font-weight: 1000;
-	text-transform: uppercase;
-	color: #9c9c9c;
-	font-size: 15px;
-}
-/* Find The Perfect Pair*/
-
-
-
-/* Find your everyday favorites*/
-.kids-find-everyday-sect {
-	padding-top: 5%;
-	padding-bottom: 7%;
-}
-.kids-find-perfect-title h1 {
-	letter-spacing: 1px;
-	font-size: 24px;
-	text-transform: uppercase;
-	font-family: "Fjalla One";
-	text-align: center;
-}
-
-.shoe-pic-kids {
-	justify-content: space-between;
-	display: flex;
-
-}
-
-.kid-shoe {
-	background: #ebebeb;
-	text-align: center;
 }

@@ -1,10 +1,9 @@
 <section class="nike-kids-container">
 
-
-	<!-- Nike Boys Header -->
+	<!-- Nike Girl Header -->
 	<section class="nike-kids-header-container">
 		<div class="nike-kids-header">
-			<h1>Nike Boys</h1>
+			<h1>Nike Girls</h1>
 		</div>
 		<div class="nike-kids-nav">
 			<a href="#" class="kids-cloth">Shoes</a>
@@ -18,7 +17,7 @@
 
 	<!-- Nike Boys Poster Picture -->
 	<section class="nike-kids-poster">
-		<img src="css/images/nikebpics/nikeboys.png" alt="">
+		<img src="css/images/nikegpics/nikegirl.png" alt="">
 		<div class="kids-poster-title">
 			<h1 class="kids-title-cap">Stay Restless</h1>
 			<p class="kids-para-cap">All the gear you need to be everywhere this summer</p>
@@ -37,9 +36,9 @@
 			<h1>Find the perfect pair</h1>
 		</div>
 		<div class="shoe-pic-kids">
-			<div class="kid-shoe" ng-repeat="shoe in nikeShoes">
-				<img ng-src="{{shoe.img}}" alt="">
-				<p>{{shoe.title}}</p>
+			<div class="kid-shoe" ng-repeat="shoes in nikeShoes">
+				<img ng-src="{{shoes.img}}" alt="">
+				<p>{{shoes.title}}</p>
 			</div>
 		</div>
 	</section>

@@ -1,4 +1,6 @@
 <section class="nike-boys-container">
+
+
 	<!-- Nike Boys Header -->
 	<section class="nike-boys-header-container">
 		<div class="nike-boys-header">
@@ -13,6 +15,7 @@
 		</div>
 	</section>
 
+
 	<!-- Nike Boys Poster Picture -->
 	<section class="nike-boys-poster">
 		<img src="css/images/nikebpics/nikeboys.png" alt="">
@@ -23,20 +26,22 @@
 		<button class="kids-button">Shop Now</button>
 	</section>
 
-	<section class="kids-shop-by-size">
-		<div class="boys-size">
 
-			<div class="boys-size-title">
-				<div class="title-boys-size">
-					<h2 class="shop-boys">Shop</h2>
+<!-- Shop By Size -->
+	<section class="kids-shop-by-size">
+		<div class="kids-size">
+
+			<div class="kids-size-title">
+				<div class="title-kids-size">
+					<h2 class="shop-kids">Shop</h2>
 					<h2>by size</h2>
 				</div>
 				<p>Get Size Help</p>
 			</div>
 
-			<div class="boys-infant-toddler boys-infant">
+			<div class="kids-infant kids-infant-toddler">
 				<img src="css/images/nikebpics/infant.png" alt="">
-				<div class="boys-infant-toddler-text">
+				<div class="kids-infant-toddler-text">
 					<h4>Infant & Toddler</h4>
 					<div class="mini-text">
 						<h6 class="tods-text">Clothing (0m-4t)</h6>
@@ -45,9 +50,9 @@
 				</div>
 			</div>
 
-			<div class="boys-little-kids boys-infant-toddler">
+			<div class="kids-little-kids kids-infant-toddler">
 				<img src="css/images/nikebpics/littlekids.png" alt="">
-				<div class="boys-infant-toddler-text">
+				<div class="kids-infant-toddler-text">
 					<h4>Little Kids</h4>
 					<div class="mini-text">
 						<h6 class="tods-text">Clothing (4-7)</h6>
@@ -56,9 +61,9 @@
 				</div>
 			</div>
 
-			<div class="boys-infant-toddler">
+			<div class="kids-infant-toddler">
 				<img src="css/images/nikebpics/bigkids.png" alt="">
-				<div class="boys-infant-toddler-text">
+				<div class="kids-infant-toddler-text">
 					<h4>Big Kids</h4>
 					<div class="mini-text">
 						<h6 class="tods-text">Clothing (xs-xl)</h6>
@@ -69,14 +74,80 @@
 
 	</section>
 
+
+<!-- Find The Perfect Fit -->
 	<section class="find-the-perfect">
 		<div class="find-the-perfect-title">
 			<h1>Find the perfect pair</h1>
 		</div>
 
 		<div class="shoe-pic-kids">
-
+			<div class="kid-shoe" ng-repeat="shoe in nikeShoes">
+				<img ng-src="{{shoe.img}}" alt="">
+				<p>{{shoe.title}}</p>
+			</div>
 		</div>
 	</section>
+
+
+	<!-- Find your everyday favorites -->
+	<section class="kids-find-everyday-sect">
+		<div class="find-the-perfect-title">
+			<h1>Find your everyday favorites</h1>
+		</div>
+		<div class="shoe-pic-kids">
+			<div class="kid-swag" ng-repeat="clothing in nikeClothes">
+				<img ng-src="{{clothing.img}}" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- Categories -->
+
+	<section class="nike-mens-categ">
+		<div class="mens-categories-box">
+			<div class="mens-categories">
+
+				<div class="mens-shoes m-categ-display">
+					<h5>Boy's Shoes</h5>
+					<a href="#">All Boys' Shoes</a>
+					<a href="#">New Boys' Shoes</a>
+					<a href="#">Lifestyle</a>
+					<a href="#">Customise with NIKEiD</a>
+				</div>
+
+				<div class="mens-clothing m-categ-display">
+					<h5>Boys' Clothing</h5>
+					<a href="#">All Boys' Clothing</a>
+					<a href="#">New Boys' Clothing</a>
+					<a href="#">Tops & T-Shirts</a>
+					<a href="#">Compression & Nike Pro</a>
+				</div>
+
+				<div class="mens-gear m-categ-display">
+					<h5>Boys' Gear</h5>
+					<a href="#">All Boys'Accessories</a>
+					<a href="#">Bags & Backpacks</a>
+					<a href="#">Hats, Visors & Headbands</a>
+					<a href="#">Socks</a>
+				</div>
+
+				<div class="mens-featured m-categ-display">
+					<h5>Featured</h5>
+					<a href="#">All Boys' Products</a>
+					<a href="#">New Releases</a>
+					<a href="#">Tech Pack Collection</a>
+					<a href="#">FC Barcelona Store</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
 
 </section>

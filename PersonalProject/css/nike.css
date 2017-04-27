@@ -1,87 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+/*Nike css is what some views have in common*/
 
-.homepage {
+
+/*Categories*/
+.categ {
 	width: 100%;
+	height: 20vh;
 }
 
-.video-home {
-	z-index: 1;
-	position: relative;
+.categories-box {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
 }
 
-.home-vid {
-	object-fit: fill;
-	width: 100%;
-	height: 80vh;
-
+.categories {
+	display: flex;
+	justify-content: space-around;
 }
 
-.restless {
-	word-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-.btn-summer {
-	position: absolute;
-	padding: 14px;
-	top: 60%;
-	left: 5%;
-	color: black;
-	font-size: 12px;
-	font-family: 'Fjalla One';
-	border: 2px solid white;
-	text-transform: uppercase;
-	background: white;
-
-}
-
-.banner-sum {
-	width: 25%;
-	left: 5%;
-	position: absolute;
-	top: 35%;
-	color: white;
-
-}
-
-.box {
-	background-image: url('http://static.tumblr.com/f2ea531c77db4144fb13d1b09ccd84ac/xilnhoj/FWHoaqyj1/tumblr_static_s04scj6u7rkcwwwg04804g0.png');
-	position: absolute;
-	height: 10%;
-	width: 100%;
-	background: #fff;
-	top: 90%;
-}
-
-.email-info {
-	padding-top: 2%;
-	padding-bottom: 0;
-	margin-bottom: 0;
-	width: 100%;
+.categ-display {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	align-content: flex-end;
-	text-align: center;
 
 }
 
-.email-pic {
-	align-self: center;
+.categ-display h5 {
+	font-size: 17px;
 }
 
-.email-text {
-	font-size: 2em;
-	font-style: "Fjalla One";
-	color: black;
-	text-transform: uppercase;
+.categ-display a {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #575859;
 }
 
-.email-small{
-	font-size: 10px;
-	color: #888484;
-}
 
-.email-sign-up {
-	color: black;
+.a-clothing, .a-gear, .a-featured, .a-shoes{
+	border-left: 2px solid #ccc;
+	padding-left: 10px;
+	height: 24vh;
+	border-bottom: 8px solid rgba(82, 83, 84,.4);
+	border-bottom-left-radius: 5em;
 }

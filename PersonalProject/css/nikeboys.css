@@ -42,8 +42,9 @@
 	color: #999999;
 	font-size: 12px
 }
-
 /*Nike Boys Header*/
+
+
 
 /*Nike Boys Poster And Caps*/
 .nike-boys-poster {
@@ -89,23 +90,23 @@
 
 
 /*Kids Shop By Size*/
-.boys-size {
+.kids-size {
 	display: flex;
 	justify-content: space-around;
 }
 
-.boys-size-title {
+.kids-size-title {
 	flex:1;
 	text-align: center;
 }
 
-.title-boys-size {
+.title-kids-size {
 	padding-top: 30px;
 	width: 30%;
 	margin-left: 38%;
 }
 
-.boys-size-title h2 {
+.kids-size-title h2 {
 	padding: 0;
 	margin: 0;
 	text-transform: uppercase;
@@ -114,7 +115,7 @@
 	text-align: left;
 }
 
-.boys-size-title p {
+.kid-shoe p {
 	padding-top: 15px;
 	font-family: 'Lato';
 	font-weight: 600;
@@ -123,31 +124,26 @@
 	font-size: 12px;
 }
 
-
-
-
-
-
-.boys-infant-toddler {
+.kids-infant-toddler {
 	flex:1;
 	display: flex;
 	justify-content: center;
 	padding-top: 30px;
 }
 
-.boys-infant {
-	border-left: 2px solid #999999;
-	border-right: 2px solid #999999;
+.kids-infant {
+	border-left: 2px solid #e7e7e7;
+	border-right: 2px solid #e7e7e7;
 }
 
-.boys-infant-toddler img {
+.kids-infant-toddler img {
 	margin:0;
 	padding: 0;
 	width:45px;
 	height:60px;
 }
 
-.boys-infant-toddler-text {
+.kids-infant-toddler-text {
 	display: flex;
 	flex-direction: column;
 	padding: 0;
@@ -156,7 +152,7 @@
 
 }
 
-.boys-infant-toddler-text h4 {
+.kids-infant-toddler-text h4 {
 	font-family: "Fjalla One";
 	font-weight: 700;
 	text-transform: uppercase;
@@ -177,19 +173,22 @@
 	padding-right: 10px;
 }
 
-.boys-little-kids {
-	border-right: 2px solid #999999;
+.kids-little-kids {
+	border-right: 2px solid #e7e7e7;
 }
-
-
 /*Kids Shop By Size*/
 
 
+
+
 /* Find The Perfect Pair*/
+.find-the-perfect {
+	padding-top: 5%;
+}
 .find-the-perfect-title {
 	width: 100%;
 	font-size: 28px;
-	border: 2px solid blue;
+	padding-bottom: 2%;
 }
 
 .find-the-perfect-title h1 {
@@ -197,5 +196,52 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: "Fjalla One";
+	text-align: center;
+}
+
+.shoe-pic-kids {
+	justify-content: space-between;
+	display: flex;
+
+}
+
+.kid-shoe {
+	background: #ebebeb;
+	text-align: center;
+}
+
+.shoe-pic-kids p{
+	padding-top: 27px;
+	font-family: "Lato";
+	font-weight: 1000;
+	text-transform: uppercase;
+	color: #9c9c9c;
+	font-size: 15px;
+}
+/* Find The Perfect Pair*/
+
+
+
+/* Find your everyday favorites*/
+.kids-find-everyday-sect {
+	padding-top: 5%;
+	padding-bottom: 7%;
+}
+.kids-find-perfect-title h1 {
+	letter-spacing: 1px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Fjalla One";
+	text-align: center;
+}
+
+.shoe-pic-kids {
+	justify-content: space-between;
+	display: flex;
+
+}
+
+.kid-shoe {
+	background: #ebebeb;
 	text-align: center;
 }

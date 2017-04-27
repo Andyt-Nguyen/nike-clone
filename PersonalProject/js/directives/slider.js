@@ -1,4 +1,3 @@
-
 NikeApp.directive('slider', function(){
 	return{
 		restrict: 'E',

@@ -67,4 +67,14 @@ NikeApp.service('NikeService',['$http', function($http){
 			 {title: "Jordan", img: "css/images/nikebpics/jordan.png"}
 		 ];
 
+		 this.bNikeClothes =
+		 [
+			 {img: "css/images/nikebpics/tops.png"},
+			 {img: "css/images/nikebpics/shorts.png"},
+			 {img: "css/images/nikebpics/hoodies.png"},
+			 {img: "css/images/nikebpics/baselayer.png"},
+			 {img: "css/images/nikebpics/socks.png"},
+			 {img: "css/images/nikebpics/equipment.png"}
+		 ];
+
 }])

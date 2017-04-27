@@ -1,11 +1,10 @@
-/*Messing with caro*/
 .caro-super-container{
 	padding-top: 5.5%;
 	width:100%;
 	position: relative;
 }
 
-/*-------*/
+
 .caro-container {
 	background: #f7f7f7;
 	position: relative;

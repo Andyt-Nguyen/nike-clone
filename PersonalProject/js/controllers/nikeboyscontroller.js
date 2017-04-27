@@ -1,4 +1,11 @@
 NikeApp.controller('NikeBoysController', ['$scope', 'NikeService', function($scope, NikeService){
-	$scope.shoes = NikeService.bNikeShoes;
-	console.log($scope.shoes);
+
+	// Nike Shoes
+	$scope.nikeShoes = NikeService.bNikeShoes;
+	console.log('Nike Shoes', $scope.nikeShoes);
+
+
+	// Nike Clothes
+	$scope.nikeClothes = NikeService.bNikeClothes;
+	console.log('Nike Clothes', $scope.nikeClothes);
 }]);

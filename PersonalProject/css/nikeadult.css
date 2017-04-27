@@ -1,0 +1,40 @@
+/* M-W-Category Nav */
+.adult-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: #fff;
+	padding-bottom: 2%;
+}
+
+.adult-title{
+	font-size: 47px;
+	text-transform: uppercase;
+	font-family: 'Fjalla One';
+	color: #252525;
+}
+
+.adult-nav {
+	width: 50%;
+	display: flex;
+	width: 50%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content: space-around;
+}
+
+.adult-nav-text {
+	flex: 1;
+	text-align: center;
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-family: 'Lato';
+}
+
+.adult-border {
+	border-left: 2px solid #666;
+	border-right: 2px solid #666;
+}

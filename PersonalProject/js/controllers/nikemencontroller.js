@@ -6,9 +6,9 @@ NikeApp.controller('NikeMenController',['$scope','NikeService', function($scope,
 
 	//Nike+ Apps
 	 $scope.nikePlus = NikeService.nikePlusApps;
-	 console.log("Nike Plus ",$scope.nikePlus);
+	 	//console.log("Nike Plus ",$scope.nikePlus);
 
 	 //Nike Social Media
 	 $scope.nikeFollow = NikeService.nikeFollow;
-	 console.log("Nike Follow", $scope.nikeFollow);
+	 	//console.log("Nike Follow", $scope.nikeFollow);
 }]);

@@ -3,6 +3,7 @@ NikeApp.service('NikeService',['$http', function($http){
 
 
 //Men Section
+//Nike Men Shoes
 		this.nikeMenShoes =[
 		{name:'Running', img:'css/images/nikempng/running.png'},
 		{name:'Basketball', img:'css/images/nikempng/basketball.png'},
@@ -31,6 +32,7 @@ NikeApp.service('NikeService',['$http', function($http){
 
 
 //Women Section
+//Nike Women Shoes
 		this.nikeWomenShoes =[
 			{name: "NIKEiD", img:"css/images/nikewomen/nikeid.png", desc: "Nike Airforce 1 Suede iD"},
 			{name: "RUNNING", img:"css/images/nikewomen/running.png", desc: "Nike Zoom All Out Low"},
@@ -56,7 +58,7 @@ NikeApp.service('NikeService',['$http', function($http){
 			{img:"css/images/nikewomen/tumblr.png"}
 		];
 
-
+//Kids Section
 //Kids Nike Benefits
 		this.bestOfNike = [
 			{title: "Sign up for email", desc: "Get the latest news and offers.", img:"css/images/nikebpics/signup.png"},
@@ -66,6 +68,7 @@ NikeApp.service('NikeService',['$http', function($http){
 		];
 
 
+//Boys Section
 //Boys Shoes
 		 this.bNikeShoes =
 		 [
@@ -77,8 +80,6 @@ NikeApp.service('NikeService',['$http', function($http){
 			 {title: "Jordan", img: "css/images/nikebpics/jordan.png"}
 		 ];
 
-
-//Boy Section
 //Boys Clothes
 		 this.bNikeClothes =
 		 [
@@ -98,7 +99,7 @@ NikeApp.service('NikeService',['$http', function($http){
 			 {title: "Basketball Checklist", img: 'css/images/nikebpics/basketballcheck.png'}
 		 ];
 
-		 
+
 //Girl Section
 //Girl Shoes
 		this.gNikeShoes = [
@@ -110,6 +111,21 @@ NikeApp.service('NikeService',['$http', function($http){
 			{title: "jordan", img: "css/images/nikegpics/jordan.png"}
 		];
 
+//Girl Clothing
+		this.gNikeClothes = [
+			{img: "css/images/nikegpics/tops.png"},
+			{img: "css/images/nikegpics/shorts.png"},
+			{img: "css/images/nikegpics/hoodies.png"},
+			{img: "css/images/nikegpics/tights.png"},
+			{img: "css/images/nikegpics/socks.png"},
+			{img: "css/images/nikegpics/equipment.png"}
+		];
 
+//Girl Checklist
+		this.gNikeChecklist = [
+			{title: "soccer checklist", img: "css/images/nikegpics/soccercheck.png"},
+			{title: "running checklist", img: "css/images/nikegpics/runningcheck.png"},
+			{title: "basketball checklist", img: "css/images/nikegpics/basketballcheck.png"}
+		];
 
 }]);

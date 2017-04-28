@@ -35,6 +35,20 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		url:'/mens-shoes',
 		templateUrl: './views/productsviews/menshoes.html'
 	})
+	.state('wproduct', {
+		url: '/womens-shoes',
+		templateUrl: './views/productsviews/womenshoes.html'
+	})
+	.state('bproduct', {
+		url: '/boys-shoes',
+		templateUrl: './views/productsviews/boyshoes.html'
+	})
+	.state('gproduct', {
+		url: '/girls-shoes',
+		templateUrl: '/views/productsviews/girlsshoes.html'
+	})
+
+	
 	$urlRouterProvider
 	.otherwise('/')
 });

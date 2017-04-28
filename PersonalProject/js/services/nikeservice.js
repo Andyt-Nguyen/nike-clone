@@ -143,4 +143,11 @@ NikeApp.service('NikeService',['$http', function($http){
 			{title: "Metcon 3", img: "css/images/customizepics/metcon.png"}
 		];
 
+//Customize Summer Suede
+		this.cNikeSuede = [
+			{title: "NIKE AIR FORCE 1 LOW iD", img:"css/images/customizepics/lownikeair1.png"},
+			{title: "NIKE AIR FORCE 1 MID iD", img: "css/images/customizepics/midair1.png"},
+			{title: "NIKE AIR FORCE 1 HIGH iD", img: "css/images/customizepics/highair1.png"}
+		];
+
 }]);

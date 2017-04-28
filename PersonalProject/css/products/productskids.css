@@ -1,0 +1,22 @@
+.shopping-multi-image {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	border: 2px solid red;
+}
+
+.shopping-poster-text-kids {
+	position: absolute;
+	bottom: 10%;
+	left: 3%;
+	color: #222222;
+	text-transform: uppercase;
+}
+
+.shopping-poster-text-kids h1{
+	font-family: "Fjalla One";
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}

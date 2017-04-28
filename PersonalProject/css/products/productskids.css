@@ -22,7 +22,7 @@
 
 .right-hand-column-kids {
 	/*border: 2px solid purple;*/
-	width: 110%;
+	width: 100%;
 }
 
 .shopping-multi-image {
@@ -35,7 +35,8 @@
 }
 
 .shopping-multi-image img {
-	padding: 5px;
+	padding: 10px;
+	height: 191px;
 }
 
 .shopping-poster-text-kids {
@@ -56,4 +57,10 @@
 .shopping-poster-text-kids p {
 	padding: 0;
 	margin: 0;
+}
+
+.categories-under-shoes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }

@@ -45,10 +45,11 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 	})
 	.state('gproduct', {
 		url: '/girls-shoes',
-		templateUrl: '/views/productsviews/girlsshoes.html'
+		templateUrl: '/views/productsviews/girlsshoes.html',
+		controller: "GirlsProdController"
 	})
 
-	
+
 	$urlRouterProvider
 	.otherwise('/')
 });

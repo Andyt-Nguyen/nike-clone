@@ -129,6 +129,15 @@ NikeApp.service('NikeService',['$http', function($http){
 			{title: "basketball checklist", img: "css/images/nikegpics/basketballcheck.png"}
 		];
 
+//Girls Categ Shoes		
+		this.gprodCategShoes = [
+			{title: "Running", img: "css/products/productsimage/nikegproducts/running.png"},
+			{title: "Basketball", img: "css/products/productsimage/nikegproducts/basketball.png"},
+			{title: "Soccer", img: "css/products/productsimage/nikegproducts/soccer.png"},
+			{title: "Lifestyle", img: "css/products/productsimage/nikegproducts/lifestyle.png"},
+			{title: "Training", img: "css/products/productsimage/nikegproducts/training.png"},
+			{title: "Jordan", img: "css/products/productsimage/nikegproducts/jordan.png"}
+		];
 
 //Customize Section
 //Customize Blank Shoes

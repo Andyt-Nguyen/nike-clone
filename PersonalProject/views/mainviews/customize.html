@@ -1,0 +1,61 @@
+<section class="customize-page">
+
+<!-- Banner Img -->
+	<section class="customize-poster-img">
+		<img src="css/images/customizepics/customizebanner.png" alt="">
+	</section>
+
+
+<!-- Sock Racer By You Sect -->
+	<section>
+		<div class="customize-sock-title">
+			<h3>Sock racer by you</h3>
+			<p class="customize-sock-1">Dial in the perfect look with the Nike Air Sock Racer's premium color game</p>
+			<p class="customize-sock-2">Available 5.4</p>
+		</div>
+	</section>
+
+<!-- Design. Make. Delivered. -->
+	<section class="design-make-deliver">
+		<div class="dmd">
+			<img src="css/images/customizepics/youdesignit.png" alt="">
+			<h1>you design it</h1>
+			<h4>We'll show you how to get started below.</h4>
+		</div>
+
+		<div class="dmd dmd-mid">
+			<img src="css/images/customizepics/wemakeit.png" alt="">
+			<h1>we make it</h1>
+			<h4>To your exact specifications.</h4>
+		</div>
+
+		<div class="dmd">
+			<img src="css/images/customizepics/delivered.png" alt="">
+			<h1>delivered in 3-5 weeks</h1>
+			<h4>We’ll email you updates along the way.</h4>
+		</div>
+	</section>
+
+	<!-- Let's Get Started -->
+	<section class="customize-started">
+		<h1>Let's get started</h1>
+		<p>Choose a starting point below to</p>
+		<p>arrive at your perfect shoe.</p>
+	</section>
+
+
+	<!-- Start with a blank canvas -->
+	<section class="customize-blank">
+		<h2>Start with a blank canvas</h2>
+
+		<div class="customize-blank-shoe">
+			<div ng-repeat="shoes in nikeShoes">
+				<img ng-src="{{shoes.img}}" alt="">
+				<a href="#"><h5>{{shoes.title}}</h5></a>
+			</div>
+		</div>
+
+
+	</section>
+
+</section>

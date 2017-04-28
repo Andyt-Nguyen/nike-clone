@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* Sock Racer By You Section*/
+.customize-sock-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4.5%;
+}
+
+.customize-sock-title h3 {
+	font-family: "Fjalla One";
+	font-weight: 400;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #323232;
+}
+
+.customize-sock-1 {
+	font-family: 'Lato';
+	font-size: 15px;
+	word-spacing: 2px;
+	color: #6e6e6e;
+}
+
+.customize-sock-2 {
+	font-family: 'Lato';
+	font-size: 15px;
+	word-spacing: 2px;
+	margin-top: 3%;
+}
+
+
+	/* Design. Make. Delivered. */
+.design-make-deliver {
+	margin-top: 3%;
+	background: #f7f7f7;
+	display: flex;
+	height: 33.2vh;
+
+}
+
+.dmd {
+	margin-top: 2%;
+	height: 22vh;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dmd h1{
+	font-size: 28px;
+	font-family: "Fjalla One";
+	text-transform: uppercase;
+	color: #000;
+}
+
+.dmd h4{
+	font-family: "Lato";
+	font-size: 15px;
+	color: #6f6f6f;
+}
+
+.dmd-mid {
+	border-left: 1px solid #cdcdcd;
+	border-right: 1px solid #cdcdcd;
+}
+
+
+/* Let's Get Started */
+.customize-started {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.customize-started h1 {
+	font-family: "Fjalla One";
+	font-size: 28px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.customize-started p {
+	padding: 0;
+	margin: 0;
+	color: #6f6f6f;
+}
+
+
+/* Start with a blank canvas */
+.customize-blank {
+	margin-top: 5%;
+	background: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.customize-blank-shoe {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.customize-blank h2 {
+	padding-top: 3%;
+	font-family: 'Fjalla One';
+	font-size: 28px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.customize-blank a {
+	text-align: center;
+	text-decoration: none;
+	color: #888888;
+}
+
+.customize-blank img {
+	padding: 20px;
+}

@@ -58,6 +58,7 @@ NikeApp.service('NikeService',['$http', function($http){
 			{img:"css/images/nikewomen/tumblr.png"}
 		];
 
+
 //Kids Section
 //Kids Nike Benefits
 		this.bestOfNike = [
@@ -126,6 +127,20 @@ NikeApp.service('NikeService',['$http', function($http){
 			{title: "soccer checklist", img: "css/images/nikegpics/soccercheck.png"},
 			{title: "running checklist", img: "css/images/nikegpics/runningcheck.png"},
 			{title: "basketball checklist", img: "css/images/nikegpics/basketballcheck.png"}
+		];
+
+
+//Customize Section
+//Customize Blank Shoes
+		this.cNikeShoes = [
+			{title: "Air Max 1 Essential", img: "css/images/customizepics/airmax1ess.png"},
+			{title: "Air Max 90 Essential", img: "css/images/customizepics/airmax90.png"},
+			{title: "Air Zoom Pegasus 33", img: "css/images/customizepics/airzoompeg.png"},
+			{title: "Kobe A.D.", img: "css/images/customizepics/kobead.png"},
+			{title: "Air Huarache Essential", img: "css/images/customizepics/airhuraache.png"},
+			{title: "Zoom Lebron Soldier 10", img: "css/images/customizepics/zoomlebron.png"},
+			{title: "Air Max 90 2.0 Flyknit", img: "css/images/customizepics/airmax.png"},
+			{title: "Metcon 3", img: "css/images/customizepics/metcon.png"}
 		];
 
 }]);

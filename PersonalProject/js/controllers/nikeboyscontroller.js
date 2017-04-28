@@ -17,5 +17,4 @@ NikeApp.controller('NikeBoysController', ['$scope', 'NikeService', function($sco
 	$scope.bestNike = NikeService.bestOfNike;
 		//console.log($scope.bestNike);
 
-
 }]);

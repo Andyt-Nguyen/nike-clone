@@ -9,12 +9,8 @@
 	background: white;
 }
 
-.underline{
-	transition: 0.4s
-}
-
 .underline:hover{
-	border-bottom: 2px solid black
+	border-bottom: 2px solid black;
 }
 
 .logo {

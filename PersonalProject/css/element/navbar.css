@@ -1,4 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+/* Upper Nav */
+.menu-bar-upper {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background: #ffffff;
+	/*border: 1px solid #ccc;*/
+}
+.upper-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.upper-nav-text {
+	padding-top: 8px;
+}
+
+.upper-nav-left {
+	display: flex;
+	justify-content: flex-end;
+	width: 28%;
+}
+
+.upper-nav-left a {
+	color: #ccc;
+	font-family: 'Lato';
+}
+
+.u-text {
+	padding-right: 25px;
+}
+.u-border {
+	border-left: 1px solid #ccc;
+}
+
+.upper-nav-right {
+	display: flex;
+	justify-content: space-between;
+	width: 25%;
+}
+
+.upper-nav-right a {
+	color: #ccc;
+	font-family: 'Lato';
+}
+
+
+
+/* Lower Nav */
 .menu-bar {
+	margin-top: 2.7%;
 	z-index: 99;
 	position: fixed;
 	display: flex;
@@ -47,7 +101,7 @@
 	height: 40px;
 	border:1px solid #ccc;
 	border-radius: 5px;
-	background-image: url('../css/images/navbarpics/searchIcon.png');
+	background-image: url('../../css/images/navbarpics/searchIcon.png');
 	background-repeat: no-repeat;
 	background-size: 23px;
 	background-position: 5px 6px;

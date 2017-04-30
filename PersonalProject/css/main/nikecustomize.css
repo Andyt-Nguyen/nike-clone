@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+
 /* Customize Navbar*/
 .customize-nav {
 	margin-top: 3%;
@@ -68,7 +69,8 @@
 }
 
 
-	/* Design. Make. Delivered. */
+
+/* Design. Make. Delivered. */
 .design-make-deliver {
 	margin-top: 3%;
 	background: #f7f7f7;
@@ -105,6 +107,7 @@
 }
 
 
+
 /* Let's Get Started */
 .customize-started {
 	margin-top: 5%;
@@ -125,6 +128,7 @@
 	margin: 0;
 	color: #6f6f6f;
 }
+
 
 
 /* Start with a blank canvas */
@@ -164,6 +168,7 @@
 }
 
 
+
 /* Material Color Innovation */
 .mci-sect {
 	display: flex;
@@ -173,6 +178,7 @@
 .mci-ind {
 	flex: 1;
 }
+
 
 
 /* Featured Stories */
@@ -225,6 +231,7 @@
 }
 
 
+
 /* Nike Flyknit */
 .flyknit-sect {
 	margin-top: 5%;
@@ -265,6 +272,8 @@
 	left: 8%;
 }
 
+
+
 /* Summer Suede */
 .summer-suede-sect {
 	background: #e6e6e6;
@@ -300,4 +309,8 @@
 	color: #000;
 	padding-bottom: 5%;
 	text-decoration: underline;
+}
+
+.suede-shoes {
+	border-radius: 20px;
 }

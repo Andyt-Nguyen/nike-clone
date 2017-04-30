@@ -48,6 +48,14 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: '/views/productsviews/girlsshoes.html',
 		controller: "GirlsProdController"
 	})
+	.state('checkout', {
+		url: "/checkout",
+		templateUrl: "views/productsviews/checkout.html"
+	})
+	.state('/success', {
+		url: '/success',
+		templateUrl: "views/productsviews/success.html"
+	})
 
 
 	$urlRouterProvider

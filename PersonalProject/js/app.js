@@ -1,4 +1,4 @@
-var NikeApp = angular.module('NikeApp',['ui.router']);
+var NikeApp = angular.module('NikeApp',['ui.router', 'ngAnimate']);
 
 NikeApp.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider

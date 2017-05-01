@@ -1,6 +1,16 @@
 /* This css file effects all MWBG */
 
 
+/* ngAnimate Through Pages*/
+main.ng-enter{
+	opacity: 0;
+	transition: 0.4s
+}
+
+main.ng-enter.ng-enter-active{
+	opacity: 1;
+}
+
 /* M-W-B-G-Categories */
 .nike-a-categ {
 	width: 100%;
@@ -42,3 +52,28 @@
 	border-bottom-left-radius: 5em;
 }
 /* M-W-B-G-Categories*/
+
+
+/*Shopper-anim*/
+
+.shopper-anim-pic {
+	opacity: 1;
+	transition: 0.4s;
+
+}
+
+.shopper-anim-pic:hover {
+	opacity: .7;
+	cursor: pointer;
+}
+
+.shopper-anim-btn {
+	opacity: .7;
+	transition: 0.4s;
+}
+
+.shopper-anim-btn:hover {
+	opacity: 1;
+	background-color: black;
+	color: white;
+}

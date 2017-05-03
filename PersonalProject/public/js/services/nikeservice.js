@@ -1,6 +1,28 @@
 NikeApp.service('NikeService',['$http', function($http){
 
+//Connection TO DB
 
+//All Shoes
+		this.getAllShoes = function(){
+			var promise = $http({
+				method: 'GET',
+				url: '/allshoes'
+			});
+			return promise.then(function(result){
+				return result.data;
+			})
+		};
+
+//Girl Shoes
+		this.getNikeGShoes = function(){
+			var promise = $http({
+				method: 'GET',
+				url: '/nikegshoes'
+			});
+			return promise.then(function(result){
+				return result.data;
+			});
+		}
 
 //Men Section
 //Nike Men Shoes
@@ -129,7 +151,7 @@ NikeApp.service('NikeService',['$http', function($http){
 			{title: "basketball checklist", img: "css/images/nikegpics/basketballcheck.png"}
 		];
 
-//Girls Categ Shoes		
+//Girls Categ Shoes
 		this.gprodCategShoes = [
 			{title: "Running", img: "css/products/productsimage/nikegproducts/running.png"},
 			{title: "Basketball", img: "css/products/productsimage/nikegproducts/basketball.png"},

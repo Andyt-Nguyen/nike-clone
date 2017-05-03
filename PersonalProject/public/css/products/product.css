@@ -103,4 +103,24 @@
 	margin: 0;
 	padding: 0;
 }
+
+/*The Breaker*/
+.the-breaker {
+	border-bottom: 2px solid #ccc;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 30px;
+}
+
+/*The Real Products*/
+.the-real-products {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 2px solid red;
+}
+
+.the-real-products img{
+	padding: 2%;
+}
 /*---------------- Right Hand Column ---------------- */

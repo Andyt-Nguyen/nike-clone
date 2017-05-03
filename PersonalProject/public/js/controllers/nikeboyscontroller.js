@@ -4,7 +4,6 @@ NikeApp.controller('NikeBoysController', ['$scope', 'NikeService', function($sco
 	$scope.nikeShoes = NikeService.bNikeShoes;
 		//console.log('Nike Shoes', $scope.nikeShoes);
 
-
 	// Nike Clothes
 	$scope.nikeClothes = NikeService.bNikeClothes;
 		//console.log('Nike Clothes', $scope.nikeClothes);

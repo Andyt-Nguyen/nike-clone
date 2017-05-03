@@ -4,6 +4,16 @@ NikeApp.controller('NikeMenController',['$scope','NikeService', function($scope,
 	$scope.nikeShoes = NikeService.nikeMenShoes;
 
 
+	// $scope.getShoes = function(){
+	// 	console.log('This is the top of the promise');
+	// 	return NikeService.getAllShoes().then(function(response){
+	// 		console.log('This is the controller ', response);
+	//
+	// 		$scope.nikeShoes = response;
+	// 	})
+	// }();
+
+
 	//Nike+ Apps
 	 $scope.nikePlus = NikeService.nikePlusApps;
 	 	//console.log("Nike Plus ",$scope.nikePlus);

@@ -5,11 +5,11 @@
 	<div class="adult-header">
 		<h1 class="adult-title">NikeWomen</h1>
 		<div class="adult-nav">
-			<a href="#" class="adult-nav-text">Shoes</a>
-			<a href="#" class="adult-nav-text adult-border">Clothing</a>
-			<a href="#" class="adult-nav-text">Shorts</a>
-			<a href="#" class="adult-nav-text adult-border">New Arrivals</a>
-			<a href="#" class="adult-nav-text">Plus Size</a>
+			<a ui-sref="wproduct" class="adult-nav-text">Shoes</a>
+			<a ui-sref="wproduct"class="adult-nav-text adult-border">Clothing</a>
+			<a ui-sref="wproduct" class="adult-nav-text">Shorts</a>
+			<a ui-sref="wproduct" class="adult-nav-text adult-border">New Arrivals</a>
+			<a ui-sref="wproduct" class="adult-nav-text">Plus Size</a>
 		</div>
 	</div>
 
@@ -23,7 +23,7 @@
 		<div class="nikewomen-video-cap">
 			<h1>Stay restless</h1>
 			<p>Spring into summer with new styles designed to take on warmer days.</p>
-			<button class="women-shop-btn shopper-anim-btn">Shop Now</button>
+			<button ui-sref="wproduct" class="women-shop-btn shopper-anim-btn">Shop Now</button>
 		</div>
 	</section>
 
@@ -33,8 +33,8 @@
 		<h1>Latest Shoes</h1>
 		<div class="w-latest-shoes">
 			<div class="repeat-lates-shoes" ng-repeat="shoes in nikeShoes">
-				<img ng-src="{{shoes.img}}" class="shopper-anim-pic" alt="">
-				<h4>{{shoes.name}}</h4>
+				<img ui-sref="wproduct" ng-src="{{shoes.img}}" class="shopper-anim-pic" alt="">
+				<h4 ui-sref="wproduct">{{shoes.name}}</h4>
 				<p>{{shoes.desc}}</p>
 			</div>
 		</div>
@@ -45,21 +45,21 @@
 	<section class="women-featured">
 		<h1>Featured</h1>
 		<div class="women-featured-pics">
-			<img src="css/images/nikewomen/featured1.png" class="shopper-anim-pic" alt="">
-			<img src="css/images/nikewomen/featured2.png" class="shopper-anim-pic" alt="">
+			<img ui-sref="wproduct" src="css/images/nikewomen/featured1.png" class="shopper-anim-pic" alt="">
+			<img ui-sref="wproduct" src="css/images/nikewomen/featured2.png" class="shopper-anim-pic" alt="">
 		</div>
 		<div class="women-featured-text">
 
 			<div class="w-featured-1-text w-f-text">
 				<h1>NIKE AIR MAX LD-ZERO</h1>
 				<p>Inspired by a vintage classic to deliver comfort and style.</p>
-				<button class="w-featured-btn">Shop Now</button>
+				<button ui-sref="wproduct" class="w-featured-btn">Shop Now</button>
 			</div>
 
 			<div class="w-featured-2-text w-f-text">
 				<h1>NIKE SPORTSWEAR TECH FLEECE DRESS</h1>
 				<p>Comfy chic for the street.</p>
-				<button class="w-featured-btn">Shop Now</button>
+				<button ui-sref="wproduct" class="w-featured-btn">Shop Now</button>
 			</div>
 		</div>
 	</section>
@@ -70,9 +70,9 @@
 		<h1>Shop By</h1>
 
 		<div class="w-shop-by-pics">
-			<img src="css/images/nikewomen/pants.png" class="shopper-anim-pic" alt="">
-			<img src="css/images/nikewomen/sportbra.png" class="shopper-anim-pic" alt="">
-			<img src="css/images/nikewomen/yoga.png" class="shopper-anim-pic" alt="">
+			<img ui-sref="wproduct" src="css/images/nikewomen/pants.png" class="shopper-anim-pic" alt="">
+			<img ui-sref="wproduct" src="css/images/nikewomen/sportbra.png" class="shopper-anim-pic" alt="">
+			<img ui-sref="wproduct" src="css/images/nikewomen/yoga.png" class="shopper-anim-pic" alt="">
 		</div>
 	</section>
 
@@ -84,34 +84,34 @@
 
 				<div class="a-shoes a-categ-display">
 					<h5>Women's Shoes</h5>
-					<a href="#">All Men's Shoes</a>
-					<a href="#">Running</a>
-					<a href="#">Basketball</a>
-					<a href="#">Tennis</a>
+					<a ui-sref="wproduct">All Women's Shoes</a>
+					<a ui-sref="wproduct">Running</a>
+					<a ui-sref="wproduct">Basketball</a>
+					<a ui-sref="wproduct">Tennis</a>
 				</div>
 
 				<div class="a-clothing a-categ-display">
 					<h5>Women's Clothing</h5>
-					<a href="#">All Women's Clothing</a>
-					<a href="#">Sports Bra's</a>
-					<a href="#">Tops & T-Shirts</a>
-					<a href="#">Shorts</a>
+					<a ui-sref="wproduct">All Women's Clothing</a>
+					<a ui-sref="wproduct">Sports Bra's</a>
+					<a ui-sref="wproduct">Tops & T-Shirts</a>
+					<a ui-sref="wproduct">Shorts</a>
 				</div>
 
 				<div class="a-gear a-categ-display">
 					<h5>Accessories & Equipment</h5>
-					<a href="#">Accessories & Equipment</a>
-					<a href="#">Bags & Backpacks</a>
-					<a href="#">Hats & Caps</a>
-					<a href="#">Gloves</a>
+					<a ui-sref="wproduct">Accessories & Equipment</a>
+					<a ui-sref="wproduct">Bags & Backpacks</a>
+					<a ui-sref="wproduct">Hats & Caps</a>
+					<a ui-sref="wproduct">Gloves</a>
 				</div>
 
 				<div class="a-featured a-categ-display">
 					<h5>Featured</h5>
-					<a href="#">Sport Bra Shop</a>
-					<a href="#">Bra Fit Guide</a>
-					<a href="#">Tight Guide</a>
-					<a href="#">Mother's Day Gift</a>
+					<a ui-sref="wproduct">Sport Bra Shop</a>
+					<a ui-sref="wproduct">Bra Fit Guide</a>
+					<a ui-sref="wproduct">Tight Guide</a>
+					<a ui-sref="wproduct">Mother's Day Gift</a>
 				</div>
 			</div>
 		</div>

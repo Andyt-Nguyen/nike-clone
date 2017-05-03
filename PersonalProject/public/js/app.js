@@ -56,6 +56,10 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		url: '/success',
 		templateUrl: "views/productsviews/success.html"
 	})
+	.state('/shoe', {
+		url:'/shoe',
+		templateUrl: 'views/productsviews/productinfoview/productinfo.html'
+	})
 
 
 	$urlRouterProvider

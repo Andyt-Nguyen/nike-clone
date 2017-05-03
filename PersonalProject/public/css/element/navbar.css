@@ -8,7 +8,7 @@
 	width: 100%;
 	z-index: 999;
 	background: #ffffff;
-	/*border: 1px solid #ccc;*/
+	border-bottom: 1px solid #ccc;
 }
 .upper-nav {
 	display: flex;

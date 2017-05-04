@@ -65,12 +65,10 @@
 	<section class="right-hand-column-kids">
 		<div class="shopping-poster-pic-kids">
 			<div class="shopping-multi-image">
-				<img src="css/products/productsimage/nikegproducts/running.png" alt="">
-				<img src="css/products/productsimage/nikegproducts/basketball.png" alt="">
-				<img src="css/products/productsimage/nikegproducts/soccer.png" alt="">
-				<img src="css/products/productsimage/nikegproducts/lifestyle.png" alt="">
-				<img src="css/products/productsimage/nikegproducts/training.png" alt="">
-				<img src="css/products/productsimage/nikegproducts/jordan.png" alt="">
+				<div ng-repeat="nshoes in NikeBProds">
+					<img ng-src="{{nshoes.img}}" alt="">
+					<h4>{{nshoes.title}}</h4>
+				</div>
 			</div>
 			<div class="shopping-poster-text-kids">
 				<h1>Find the</h1>
@@ -82,12 +80,12 @@
 
 	<!-- Categories under shoes -->
 		<div class="categories-under-shoes">
-			<a href="">Running</a>
+			<!-- <a href="">Running</a>
 			<a href="">Basketball</a>
 			<a href="">Soccer</a>
 			<a href="">Lifestyle</a>
 			<a href="">Training</a>
-			<a href="">Jordan</a>
+			<a href="">Jordan</a> -->
 
 		</div>
 	</section>

@@ -1,62 +1,11 @@
 <section class="shopping-page">
-
 	<!-- Banner Poster -->
 	<section class="the-products">
 
-
-
-<!-- Left Hand Column -->
 <!-- L-Column Will Remain Static -->
 		<section class="left-hand-column-kids">
-			<h3>Girls'</h3>
-			<div class="hr-line">
-				<hr>
-			</div>
-
-
-	<!-- Shoe Shopping -->
-			<div class="shop-prods">
-				<h5>Shoes</h5>
-				<div class="shop-prods-categ">
-					<a href="#" class="prods">Lifestyle (nums)</a>
-					<a href="#" class="prods">Running (nums)</a>
-					<a href="#" class="prods">Basketball (nums)</a>
-					<a href="#" class="prods">Soccer (nums)</a>
-					<a href="#" class="prods">Training & Gym (nums)</a>
-				</div>
-			</div>
-
-			<div class="shop-prods">
-				<h5>Clothes</h5>
-				<div class="shop-prods-categ">
-					<a href="#" class="prods">Tops & T-Shirts</a>
-					<a href="#" class="prods">Hoodies & Pullovers</a>
-					<a href="#" class="prods">Jackets & Vests</a>
-					<a href="#" class="prods">Pants & Tights</a>
-					<a href="#" class="prods">Socks</a>
-					<a href="#" class="prods">Accessories & Equipment</a>
-				</div>
-			</div>
-
-			<h3>Filters</h3>
-			<div class="hr-line">
-				<hr>
-			</div>
-
-			<div class="shop-prods">
-				<div class="shop-prods-categ">
-					<a href="#" class="shop-categ-coll"><h5 class="prods">Sport</h5> <span class="prods">+</span></a>
-					<a href="#" class="shop-categ-coll"><h5 class="prods">Size Range</h5> <span class="prods">+</span></a>
-					<a href="#" class="shop-categ-coll"><h5 class="prods">Collections</h5> <span class="prods">+</span></a>
-					<a href="#" class="shop-categ-coll"><h5 class="prods">Fit</h5> <span class="prods">+</span></a>
-					<a href="#" class="shop-categ-coll"><h5 class="prods">Color?</h5> <span class="prods">+</span></a>
-					<a href="#" class="shop-categ-coll"><h5 class="prods">Size</h5> <span class="prods">+</span></a>
-				</div>
-			</div>
+			<left-hand-column></left-hand-column>
 		</section>
-
-
-
 
 
 
@@ -69,12 +18,6 @@
 						<img ng-src="{{nshoes.img}}" alt="">
 						<h4>{{nshoes.title}}</h4>
 					</div>
-					<!-- <img src="css/products/productsimage/nikegproducts/running.png" alt="">
-					<img src="css/products/productsimage/nikegproducts/basketball.png" alt="">
-					<img src="css/products/productsimage/nikegproducts/soccer.png" alt="">
-					<img src="css/products/productsimage/nikegproducts/lifestyle.png" alt="">
-					<img src="css/products/productsimage/nikegproducts/training.png" alt="">
-					<img src="css/products/productsimage/nikegproducts/jordan.png" alt=""> -->
 				</div>
 				<div class="shopping-poster-text-kids">
 					<h1>Find the</h1>
@@ -85,31 +28,18 @@
 			</div>
 
 			<div class="the-breaker">
-
-
+			<h1>All Shoes</h1>
 			</div>
-
 			<!-- The Real Deal Stuff -->
 			<div class="the-real-products">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-				<img src="./css/products/productsimage/nikegproducts/placeholder.png" alt="">
-
+				<div ng-repeat= "shoes in LSShoes">
+					<img style="padding:3%;" ng-src="{{shoes.img}}" alt="">
+					<h5 style="margin:0; padding:0">{{shoes.name}}</h5>
+					<h6 style="margin:0; padding:0">Big Kids' Running Shoe</h6>
+					<p style="margin:0; padding:0">{{shoes.price | currency}}</p>
+				</div>
 			</div>
 
 		</section>
-
-
 	</section>
 </section>

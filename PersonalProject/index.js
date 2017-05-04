@@ -24,10 +24,44 @@ app.get('/allshoes', function(req, res){
 	})
 });
 
+
+////////////////
+//Girl Section//
+///////////////
 app.get('/nikegshoes', function(req ,res) {
 	db.girlproducts(function(err, shoes){
-		res.send(shoes)
+		res.send(shoes);
 	})
+});
+
+app.get('/nikeglsshoes', function(req, res){
+	db.girllifestyle(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikegrnshoes', function(req, res){
+	db.girlrunning(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikegbshoes', function(req, res){
+	db.girlbasketball(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikegsshoes', function(req, res){
+	db.girlsoccer(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikegjshoes', function(req, res){
+	db.girlshoeall(function(err, shoes){
+		res.send(shoes);
+	});
 });
 
 

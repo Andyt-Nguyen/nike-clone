@@ -31,6 +31,9 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: './views/mainviews/customize.html',
 		controller: 'NikeCustomizeController'
 	})
+
+
+	//Product Views
 	.state('mproduct', {
 		url:'/mens-shoes',
 		templateUrl: './views/productsviews/menshoes.html'
@@ -41,22 +44,54 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 	})
 	.state('bproduct', {
 		url: '/boys-shoes',
-		templateUrl: './views/productsviews/boyshoes.html'
+		templateUrl: './views/productsviews/boyshoes.html',
+		controller: "BoysProductController"
 	})
 	.state('gproduct', {
 		url: '/girls-shoes',
 		templateUrl: '/views/productsviews/girlsshoes.html',
 		controller: "GirlsProdController"
 	})
+
+	//Individual Views For Specific Products
+	.state('allgshoes', {
+		templateUrl: './views/productsviews/elements/nikegirls/allgirlsshoes.html'
+	})
+
+	.state('gLifeStyle', {
+		templateUrl: './views/productsviews/girlviews/lifestyle.html',
+		controller: 'GirlsProdController'
+	})
+	.state('gRunningStyle', {
+		templateUrl: './views/productsviews/girlviews/running.html',
+		controller: 'GirlsProdController'
+	})
+	.state('gBasketBallStyle', {
+		templateUrl: './views/productsviews/girlviews/basketball.html',
+		controller: 'GirlsProdController'
+	})
+	.state('gSoccerStyle', {
+		templateUrl: './views/productsviews/girlviews/soccer.html',
+		controller: 'GirlsProdController'
+	})
+	.state('gJordanStyle', {
+		templateUrl: './views/productsviews/girlviews/jordan.html',
+		controller: 'GirlsProdController'
+	})
+
+
+
+
+	//CheckOut Views
 	.state('checkout', {
 		url: "/checkout",
 		templateUrl: "views/productsviews/checkout.html"
 	})
-	.state('/success', {
+	.state('success', {
 		url: '/success',
 		templateUrl: "views/productsviews/success.html"
 	})
-	.state('/shoe', {
+	.state('shoe', {
 		url:'/shoe',
 		templateUrl: 'views/productsviews/productinfoview/productinfo.html'
 	})

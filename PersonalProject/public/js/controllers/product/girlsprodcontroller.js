@@ -4,16 +4,20 @@ NikeApp.controller('GirlsProdController', ['$scope', 'NikeService', function($sc
 	$scope.gProdShoes = NikeService.gprodCategShoes;
 
 //Calling To The Data base
-	$scope.getNikeGShoes = function(){
-		console.log('The Function has Been reached');
-		var promise = NikeService.getNikeGShoes();
-		return promise.then(function(result){
-			console.log('Da Shoes', result);
-			$scope.NikeGShoes = result;
-		})
+
+
+//All Nike Shoes
+	$scope.NikeGAPics = NikeService.AllGNikePics;
+
+	$scope.getGAShoes = function(){
+		var promise = NikeService.getNikeGAShoes();
+		return promise.then(function(response){
+			$scope.GAShoes = response;
+			combo($scope.GAShoes, $scope.NikeGAPics);
+			console.log('Success',$scope.GAShoes);
+		});
 	}();
 
-	
 
 
 //LifeStyle
@@ -23,7 +27,6 @@ $scope.NikeGLSPics = NikeService.getNikeGLSPics;
 		return promise.then(function(result){
 			$scope.LSShoes = result;
 			combo($scope.LSShoes, $scope.NikeGLSPics);
-			console.log('HELLo',$scope.LSShoes);
 		})
 	}();
 
@@ -46,7 +49,6 @@ $scope.NikeGLSPics = NikeService.getNikeGLSPics;
 		return promise.then(function(result){
 			$scope.GBShoes = result;
 			combo($scope.GBShoes, $scope.GBaShoes);
-			console.log('Basketball',$scope.GBShoes);
 		});
 	}();
 
@@ -57,13 +59,11 @@ $scope.NikeGLSPics = NikeService.getNikeGLSPics;
 		return promise.then(function(result){
 			$scope.GSShoes = result;
 			combo($scope.GSShoes, $scope.GSShoesPics);
-			console.log('Soccer', $scope.GSShoes);
 		});
 	}();
 
 //Jordan
 	$scope.GJShoesPics = NikeService.NikeJShoesPics;
-	console.log($scope.GJShoesPics);
 	$scope.getGJShoes = function(){
 		var promise = NikeService.getNikeJShoes();
 		return promise.then(function(result){
@@ -71,6 +71,7 @@ $scope.NikeGLSPics = NikeService.getNikeGLSPics;
 			combo($scope.GJShoes, $scope.GJShoesPics)
 		});
 	}();
+
 
 	var combo = function(a,b){
 		for(var i = 0; i < a.length; i++){

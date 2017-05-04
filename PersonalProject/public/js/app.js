@@ -32,32 +32,86 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		controller: 'NikeCustomizeController'
 	})
 
+/////////////////
+//Product Views//
+////////////////
 
-	//Product Views
+	//Men Products
 	.state('mproduct', {
 		url:'/mens-shoes',
-		templateUrl: './views/productsviews/menshoes.html'
+		templateUrl: './views/productsviews/menshoes.html',
+		controller: 'MensProdController'
 	})
+
+	.state('mLifeStyle', {
+		url:'/mens-lifestyle',
+		templateUrl:'./views/productsviews/mensviews/lifestyle.html',
+		controller:'MensProdController'
+	})
+
+	.state('mRun', {
+		url:'/mens-running',
+		templateUrl:'./views/productsviews/mensviews/runstyle.html',
+		controller: 'MensProdController'
+	})
+
+	.state('mBasketball', {
+		url:'/mens-basketball',
+		templateUrl:'./views/productsviews/mensviews/baskstyle.html',
+		controller:'MensProdController'
+	})
+
+	.state('mSoccer', {
+		url:'/mens-soccer',
+		templateUrl: './views/productsviews/mensviews/soccer.html',
+		controller:'MensProdController'
+	})
+
+	.state('mTraining', {
+		url:'/mens-training-gym',
+		templateUrl:'./views/productsviews/mensviews/training.html',
+		controller:'MensProdController'
+	})
+
+
+
+
+
+	//NikeWomen
 	.state('wproduct', {
 		url: '/womens-shoes',
-		templateUrl: './views/productsviews/womenshoes.html'
+		templateUrl: './views/productsviews/womenshoes.html',
+		controller: 'WomensProdController'
 	})
+
+
+
+
+
+
+
+
+
+
+
+
+
 	.state('bproduct', {
 		url: '/boys-shoes',
 		templateUrl: './views/productsviews/boyshoes.html',
 		controller: "BoysProductController"
 	})
+
+
+
+	//Nike Girls
 	.state('gproduct', {
 		url: '/girls-shoes',
-		templateUrl: '/views/productsviews/girlsshoes.html',
+		templateUrl: './views/productsviews/girlviews/gallshoes.html',
 		controller: "GirlsProdController"
 	})
 
-	//Individual Views For Specific Products
-	.state('allgshoes', {
-		templateUrl: './views/productsviews/elements/nikegirls/allgirlsshoes.html'
-	})
-
+	//Section Views Views For Specific Products
 	.state('gLifeStyle', {
 		templateUrl: './views/productsviews/girlviews/lifestyle.html',
 		controller: 'GirlsProdController'

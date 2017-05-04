@@ -6,16 +6,223 @@ NikeApp.service('NikeService',['$http', function($http){
 
 //All Shoes
 	this.getAllShoes = function(){
-		var promise = $http({
-			method: 'GET',
-			url: '/allshoes'
-		});
-		return promise.then(function(result){
-			return result.data;
-		})
-		};
+		return fpromise('GET','/getAllProds');
+	};
 
-//Girl Section
+
+
+////////////
+//Nike Men//
+////////////
+this.AllMNikePics =[
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike1black.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike2black.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike3black.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike4white.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike5grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike6grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike7white.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike8white.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike9black.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike10yellow.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike11yellow.png'},
+	{img:'./css/products/productsimage/nikemproducts/lifestyle/nike12white.png'},
+
+	{img:'./css/products/productsimage/nikemproducts/running/nike1purple.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike2blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike3grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike4blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike5grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike6grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike7grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike8blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike9blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike10white.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike11white.png'},
+	{img:'./css/products/productsimage/nikemproducts/running/nike12grey.png'},
+
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike1grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike2blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike3white.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike4grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike5black.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike6white.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike7grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike8red.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike9black.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike10white.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike11white.png'},
+	{img:'./css/products/productsimage/nikemproducts/basketball/nike12white.png'},
+
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike1grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike2grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike3grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike4grey.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike5red.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike6blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike7white.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike8white.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike9red.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike10blue.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike11white.png'},
+	{img:'./css/products/productsimage/nikemproducts/soccer/nike12white.png'},
+
+	{img:'./css/products/productsimage/nikemproducts/training/nike1red.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike2red.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike3black.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike4black.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike5white.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike6white.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike7black.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike8black.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike9red.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike10black.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike11red.png'},
+	{img:'./css/products/productsimage/nikemproducts/training/nike12white.png'}
+];
+
+	this.getNikeMAShoes = function(){
+		return fpromise('GET', '/nikemshoes');
+	};
+
+
+//MLifeStyle
+	this.MLSPics = [
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike1black.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike2black.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike3black.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike4white.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike5grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike6grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike7white.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike8white.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike9black.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike10yellow.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike11yellow.png'},
+		{img:'./css/products/productsimage/nikemproducts/lifestyle/nike12white.png'}
+	];
+
+	this.getNikeMLSShoes = function(){
+		return fpromise('GET','/nikemlsshoes');
+	}
+
+
+
+//MRunning
+	this.NikeMenRnPics = [
+		{img:'./css/products/productsimage/nikemproducts/running/nike1purple.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike2blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike3grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike4blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike5grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike6grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike7grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike8blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike9blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike10white.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike11white.png'},
+		{img:'./css/products/productsimage/nikemproducts/running/nike12grey.png'}
+	];
+
+	this.getNikeMRnShoes = function(){
+		return fpromise('GET', '/nikemrnshoes');
+	}
+
+//MBasketball
+	this.NikeMBPics = [
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike1grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike2blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike3white.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike4grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike5black.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike6white.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike7grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike8red.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike9black.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike10white.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike11white.png'},
+		{img:'./css/products/productsimage/nikemproducts/basketball/nike12white.png'}
+	];
+
+	this.getNikeMBShoes = function(){
+		return fpromise('GET','/nikembshoes');
+	};
+
+//mSoccer
+	this.NikeMSPics = [
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike1grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike2grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike3grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike4grey.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike5red.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike6blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike7white.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike8white.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike9red.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike10blue.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike11white.png'},
+		{img:'./css/products/productsimage/nikemproducts/soccer/nike12white.png'},
+	];
+
+	this.getNikeMSShoes = function(){
+		return fpromise('GET','/nikemsshoes');
+	};
+
+//MTraining And Gym
+	this.NikeMGTPics = [
+		{img:'./css/products/productsimage/nikemproducts/training/nike1red.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike2red.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike3black.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike4black.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike5white.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike6white.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike7black.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike8black.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike9red.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike10black.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike11red.png'},
+		{img:'./css/products/productsimage/nikemproducts/training/nike12white.png'}
+	];
+
+	this.getNikeMTGShoes = function(){
+		return fpromise('GET','/niketgshoes');
+	};
+
+///////////////
+//Nike Women//
+/////////////
+	this.NikeWPics = [
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike1grey.png'},
+		{img;'public/css/products/productsimage/nikewproducts/lifestyle/nike2white.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike3white.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike4white.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike5black.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike6black.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike7black.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike8black.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike9pink.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike10pink.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike11white.png'},
+		{img:'public/css/products/productsimage/nikewproducts/lifestyle/nike12grey.png'},
+
+		{img:'public/css/products/productsimage/nikewproducts/running/nike1grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike2black.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike3grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike4white.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike5red.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike6grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike7grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike8grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike9grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike10grey.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike11blue.png'},
+		{img:'public/css/products/productsimage/nikewproducts/running/nike12grey.png'}
+	]
+
+//////////////
+//Nike Girl//
+////////////
+
 //GAll Shoes
 	this.AllGNikePics = [
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeprestextreme.png'},
@@ -30,31 +237,7 @@ NikeApp.service('NikeService',['$http', function($http){
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg6white.png'},
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg7white.png'},
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nike8white.png'},
-	]
-	this.getNikeGShoes = function(){
-		var promise = $http({
-			method: 'GET',
-			url: '/nikegshoes'
-		});
-		return promise.then(function(result){
-			return result.data;
-		});
-	}
 
-//GLife Style
-	this.getNikeGLSPics = [
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeprestextreme.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikepresto.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikehurrcha.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeHurrcahultra.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg1green.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nike2white.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg3black.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg4red.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg5purple.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg6white.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg7white.png'},
-		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nike8white.png'},
 
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/running/nikeg1red.png'},
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/running/nike2red.png'},
@@ -109,14 +292,28 @@ NikeApp.service('NikeService',['$http', function($http){
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/jordan/nike12black.png'}
 	];
 
+	this.getNikeGAShoes = function(){
+		return fpromise('GET','/nikegshoes');
+	};
+
+//GLife Style
+	this.getNikeGLSPics = [
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeprestextreme.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikepresto.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikehurrcha.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeHurrcahultra.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg1green.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nike2white.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg3black.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg4red.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg5purple.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg6white.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nikeg7white.png'},
+		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/lifestyle/nike8white.png'}
+	];
+
 	this.getNikeGLS = function(){
-		var promise = $http({
-			method: 'GET',
-			url: '/nikeglsshoes'
-		});
-		return promise.then(function(result){
-			return result.data;
-		});
+		return fpromise('GET','/nikeglsshoes');
 	};
 
 //GRunning
@@ -135,14 +332,9 @@ NikeApp.service('NikeService',['$http', function($http){
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/running/nikeg12green.png'}
 	];
 
+
 	this.getNikeGRnShoes = function(){
-		var promise = $http({
-			method: 'GET',
-			url: '/nikegrnshoes'
-		});
-		return promise.then(function(result){
-			return result.data;
-		});
+		return fpromise('GET','/nikegrnshoes')
 	};
 
 
@@ -162,14 +354,9 @@ NikeApp.service('NikeService',['$http', function($http){
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/basketball/nike12black.png'}
 	];
 
+
 	this.getNikeGBShoes = function(){
-		var promise = $http({
-			method: 'GET',
-			url: '/nikegbshoes'
-		});
-		return promise.then(function(result){
-			return result.data;
-		});
+		return fpromise('GET','/nikegbshoes');
 	};
 
 //GSoccer
@@ -189,13 +376,7 @@ NikeApp.service('NikeService',['$http', function($http){
 	];
 
 	this.getNikeGSShoes = function(){
-		var promise = $http({
-			method:'GET',
-			url:'/nikegsshoes'
-		});
-		return promise.then(function(result){
-			return result.data;
-		});
+		return fpromise('GET','/nikegsshoes');
 	};
 
 //GJordan
@@ -214,14 +395,9 @@ NikeApp.service('NikeService',['$http', function($http){
 		{img:'./css/products/productsimage/nikegproducts/nikegproductssuper/jordan/nike12black.png'}
 	];
 
+
 	this.getNikeJShoes = function(){
-		var promise = $http({
-			method: 'GET',
-			url:'/nikegjshoes'
-		});
-		return promise.then(function(response){
-			return response.data;
-		});
+		return fpromise('GET','/nikegjshoes')
 	};
 
 
@@ -417,5 +593,21 @@ NikeApp.service('NikeService',['$http', function($http){
 		{title: "NIKE AIR FORCE 1 MID iD", img: "css/images/customizepics/midair1.png"},
 		{title: "NIKE AIR FORCE 1 HIGH iD", img: "css/images/customizepics/highair1.png"}
 	];
+
+
+
+
+
+	//Callback :)
+	var fpromise = function(a,b){
+		var promise =
+		$http({
+				method: a,
+				url: b
+			});
+		 return promise.then(function(result){
+			return result.data;
+		})
+	};
 
 }]);

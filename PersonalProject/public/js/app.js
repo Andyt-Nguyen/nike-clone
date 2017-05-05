@@ -84,27 +84,92 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		controller: 'WomensProdController'
 	})
 
+	.state('wLifeStyle', {
+		url:'/womens-lifestyle',
+		templateUrl:'./views/productsviews/womensview/lifestyle.html',
+		controller: 'WomensProdController'
+	})
+
+	.state('wRunning', {
+		url:'/womens-running',
+		templateUrl: './views/productsviews/womensview/running.html',
+		controller:'WomensProdController'
+	})
+
+	.state('wBasketball', {
+		url: '/womens-basketball',
+		templateUrl: './views/productsviews/womensview/basketball.html',
+		controller:'WomensProdController'
+	})
+
+	.state('wSoccer', {
+		url: '/womens-soccer',
+		templateUrl: './views/productsviews/womensview/soccer.html',
+		controller:'WomensProdController'
+	})
+
+	.state('wTraining', {
+		url: '/womens-training-gym',
+		templateUrl: './views/productsviews/womensview/training.html',
+		controller:'WomensProdController'
+	})
 
 
 
 
-
-
-
-
-
-
-
-
+//NikeBoys
 	.state('bproduct', {
 		url: '/boys-shoes',
 		templateUrl: './views/productsviews/boyshoes.html',
 		controller: "BoysProductController"
 	})
 
+	.state('bLifeStyle', {
+		url:'/boys-lifestyle',
+		templateUrl:'./views/productsviews/boyview/lifestyle.html',
+		controller:'BoysProductController'
+	})
+
+	.state('bRunning', {
+		url:'/boys-running',
+		templateUrl:'./views/productsviews/boyview/running.html',
+		controller:'BoysProductController'
+	})
+
+	.state('bBasketball', {
+		url:'/boys-basketball',
+		templateUrl:'./views/productsviews/boyview/basketball.html',
+		controller:'BoysProductController'
+	})
+
+	.state('bSoccer', {
+		url:'/boys-soccer',
+		templateUrl:'./views/productsviews/boyview/soccer.html',
+		controller:'BoysProductController'
+	})
+
+	.state('bTraining', {
+		url:'/boys-training-gym',
+		templateUrl:'./views/productsviews/boyview/training.html',
+		controller:'BoysProductController'
+	})
 
 
-	//Nike Girls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NikeGirls
 	.state('gproduct', {
 		url: '/girls-shoes',
 		templateUrl: './views/productsviews/girlviews/gallshoes.html',

@@ -24,6 +24,8 @@ app.get('/allshoes', function(req, res){
 	})
 });
 
+
+
 ////////////
 //NikeMen//
 //////////
@@ -64,15 +66,96 @@ app.get('/niketgshoes', function(req, res){
 });
 
 
+
+
+
 //////////////
 //NikeWomen//
 ////////////
-
 app.get('/nikewshoes', function(req, res){
 	db.womensproducts(function(err, shoes){
 		res.send(shoes);
 	});
 });
+
+app.get('/nikewlsshoes', function(req, res){
+	db.womenslifestyle(function(err, shoes){
+		res.send(shoes)
+	});
+});
+
+app.get('/nikewrnshoes', function(req, res){
+	db.womensrunning(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikewbshoes', function(req, res){
+	db.womensbasketball(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikewsshoes',function(req, res){
+	db.womenssoccer(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikewtgshoes', function(req, res){
+	db.womenstraining(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+
+
+/////////////
+//Nike Boys/
+///////////
+app.get('/nikebshoes', function(req, res){
+	db.boyproducts(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikeblsshoes', function(req, res){
+	db.boyslifestyle(function(err, shoes){
+		res.send(shoes);
+	});
+});
+
+app.get('/nikebrunning', function(req, res){
+	db.boysrunning(function(err, shoes){
+		res.send(shoes);
+	})
+})
+
+app.get('/nikebbasketball', function(req, res){
+	db.boysbasketball(function(err, shoes){
+		res.send(shoes);
+	})
+})
+
+app.get('/nikebsoccer', function(req, res){
+	db.boyssoccer(function(err, shoes){
+		res.send(shoes);
+	})
+})
+
+app.get('/niketraining', function(req, res){
+	db.boystraining(function(err, shoes){
+		res.send(shoes);
+	})
+})
+
+
+
+
+
+
+
+
 
 
 
@@ -86,8 +169,7 @@ app.get('/nikewshoes', function(req, res){
 
 /////////////
 //NikeGirl//
-////////////
-
+///////////
 app.get('/nikegshoes', function(req, res){
 	db.girlproducts(function(err, shoes){
 		res.send(shoes)
@@ -123,6 +205,8 @@ app.get('/nikegjshoes', function(req, res){
 		res.send(shoes);
 	});
 });
+
+
 
 
 app.listen(3000, function(){

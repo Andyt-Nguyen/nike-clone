@@ -1,2 +1,3 @@
-select * from nikeproducts
-where gender = 'female'
+SELECT * FROM nikeproducts
+WHERE gender = 'female'
+LIMIT 60

@@ -12,11 +12,9 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 	}();
 
 
-
-
-
 //Lifestyle
 	$scope.NikeWLSPics = NikeService.NikeWLSPics;
+	$scope.WLSLength = $scope.NikeWLSPics.length;
 	$scope.getNikeWLSShoes = function(){
 		var promise = NikeService.getNikeWLSShoes();
 		return promise.then(function(result){
@@ -28,6 +26,7 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 
 //Running
 	$scope.NikeWRnPics = NikeService.NikeWRnPics;
+	$scope.RnLength = $scope.NikeWRnPics.length;
 	$scope.getNikeWRnShoes = function(){
 		var promise = NikeService.getNikeWRnShoes();
 		return promise.then(function(result){
@@ -39,6 +38,7 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 
 //Basketball
 	$scope.NikeWBPics = NikeService.NikeWBPics;
+	$scope.BLength = $scope.NikeWBPics.length;
 	$scope.getNikeWBShoes = function(){
 		var promise = NikeService.getNikeWBShoes();
 		return promise.then(function(result){
@@ -47,8 +47,10 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 		});
 	}();
 
+
 //Soccer
 	$scope.NikeWSPics = NikeService.NikeWSPics;
+	$scope.SLength = $scope.NikeWSPics.length;
 	$scope.getNikeWSShoes = function(){
 		var promise = NikeService.getNikeWSShoes();
 		return promise.then(function(result){
@@ -57,8 +59,10 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 		});
 	}();
 
+
 //Training And Gym
 	$scope.NikeWTGPics = NikeService.NikeWTGPics;
+	$scope.TGLength = $scope.NikeWTGPics.length;
 	$scope.getNikeWTGShoes = function(){
 		var promise = NikeService.getNikeWTGShoes();
 		return promise.then(function(result){
@@ -66,13 +70,6 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 			combo($scope.TGShoes, $scope.NikeWTGPics);
 		});
 	}();
-
-
-
-
-
-
-
 
 
 	var combo = function(a,b){

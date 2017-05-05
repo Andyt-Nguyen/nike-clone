@@ -120,7 +120,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	/*border: 2px solid red;*/
-	width: 70vw;
+	width: 75vw;
 }
 
 .the-real-products h5 {
@@ -137,7 +137,14 @@
 	color: #bbbbbb;
 }
 
-.the-real-products img{
-	padding: 2%;
+.the-real-products img:hover{
+	padding: 4%;
+}
+
+.the-real-products img:hover{
+	cursor: pointer;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	height: 256px;
 }
 /*---------------- Right Hand Column ---------------- */

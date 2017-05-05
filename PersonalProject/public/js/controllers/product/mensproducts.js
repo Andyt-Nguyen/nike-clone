@@ -16,6 +16,7 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 
 //LifeStyle
 	$scope.NikeMLSPics = NikeService.MLSPics;
+	$scope.LSLength = $scope.NikeMLSPics.length;
 	$scope.getNikeMLSShoes = function(){
 		var promise = NikeService.getNikeMLSShoes();
 		return promise.then(function(result){
@@ -28,6 +29,7 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 
 //Running
 	$scope.NikeMRnPics = NikeService.NikeMenRnPics;
+	$scope.RnLength = $scope.NikeMRnPics.length;
 	$scope.getNikeMRnShoes = function(){
 		var promise = NikeService.getNikeMRnShoes();
 		return promise.then(function(result){
@@ -38,6 +40,7 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 
 //Basketball
 	$scope.NikeMBPics = NikeService.NikeMBPics;
+	$scope.BLength = $scope.NikeMBPics.length;
 	$scope.getNikeMBShoes = function(){
 		var promise = NikeService.getNikeMBShoes();
 		return promise.then(function(result){
@@ -48,6 +51,7 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 
 //Soccer
 	$scope.NikeMSPics = NikeService.NikeMSPics;
+	$scope.SLength = $scope.NikeMSPics.length;
 	$scope.getNikeMSShoes = function(){
 		var promise = NikeService.getNikeMSShoes();
 		return promise.then(function(result){
@@ -58,6 +62,7 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 
 	//Traning And Gym
 	$scope.NikeMGTPics = NikeService.NikeMGTPics;
+	$scope.GTLength = $scope.NikeMGTPics.length;
 	$scope.getNikeMGTShoes = function(){
 		var promise = NikeService.getNikeMTGShoes();
 		return promise.then(function(result){

@@ -1,8 +1,12 @@
-NikeApp.controller('MensProdController',['$scope','NikeService', function($scope, NikeService){
+NikeApp.controller('MensProdController',['$scope','NikeService','$stateParams', function($scope, NikeService, $stateParams){
 
-	/////////////////
-	//NikeMensShoes//
-	////////////////
+/////////////////
+//NikeMensShoes//
+////////////////
+
+
+
+
 
 //All Shoes
 	$scope.AllMNikePics = NikeService.AllMNikePics;
@@ -11,6 +15,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 		return promise.then(function(result){
 			$scope.NikeMAShoes = result;
 			combo($scope.NikeMAShoes, $scope.AllMNikePics);
+			$scope.singleItem = $scope.NikeMAShoes.filter(function(data){
+				return data.id == $stateParams.id
+			})
 		});
 	}();
 
@@ -22,6 +29,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 		return promise.then(function(result){
 			$scope.LSShoes = result;
 			combo($scope.LSShoes, $scope.NikeMLSPics);
+			$scope.singleItem = $scope.LSShoes.filter(function(data){
+				return data.id == $stateParams.id
+			})
 		});
 	}();
 
@@ -35,6 +45,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 		return promise.then(function(result){
 			$scope.RnShoes = result;
 			combo($scope.RnShoes, $scope.NikeMRnPics);
+			$scope.singleItem = $scope.RnShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}();
 
@@ -46,6 +59,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 		return promise.then(function(result){
 			$scope.BShoes = result;
 			combo($scope.BShoes, $scope.NikeMBPics);
+			$scope.singleItem = $scope.BShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}();
 
@@ -57,6 +73,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 		return promise.then(function(result){
 			$scope.SShoes = result;
 			combo($scope.SShoes, $scope.NikeMSPics);
+			$scope.singleItem = $scope.SShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}();
 
@@ -68,7 +87,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService', function($scope
 		return promise.then(function(result){
 			$scope.GTShoes = result;
 			combo($scope.GTShoes, $scope.NikeMGTPics);
-			console.log($scope.GTShoes);
+			$scope.singleItem = $scope.GTShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}()
 

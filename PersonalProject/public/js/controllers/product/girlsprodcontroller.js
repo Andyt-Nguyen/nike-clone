@@ -1,4 +1,4 @@
-NikeApp.controller('GirlsProdController', ['$scope', 'NikeService', function($scope, NikeService){
+NikeApp.controller('GirlsProdController', ['$scope', 'NikeService','$stateParams', function($scope, NikeService, $stateParams){
 
 //Intro To the Nike Girl Products Page
 	$scope.gProdShoes = NikeService.gprodCategShoes;
@@ -14,7 +14,9 @@ NikeApp.controller('GirlsProdController', ['$scope', 'NikeService', function($sc
 		return promise.then(function(response){
 			$scope.GAShoes = response;
 			combo($scope.GAShoes, $scope.NikeGAPics);
-			console.log('Success',$scope.GAShoes);
+			$scope.singleItem = $scope.GAShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}();
 

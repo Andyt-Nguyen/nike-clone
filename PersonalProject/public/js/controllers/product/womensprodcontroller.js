@@ -1,4 +1,4 @@
-NikeApp.controller('WomensProdController',['$scope','NikeService', function($scope,NikeService){
+NikeApp.controller('WomensProdController',['$scope','NikeService','$stateParams', function($scope,NikeService, $stateParams){
 
 
 //All Shoes
@@ -8,6 +8,9 @@ NikeApp.controller('WomensProdController',['$scope','NikeService', function($sco
 		return promise.then(function(result){
 			$scope.WShoes = result;
 			combo($scope.WShoes, $scope.NikeWAPics);
+			$scope.singleItem = $scope.WShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}();
 

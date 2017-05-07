@@ -1,5 +1,6 @@
-NikeApp.controller('BoysProductController', ['$scope', 'NikeService', function($scope, NikeService){
+NikeApp.controller('BoysProductController', ['$scope', 'NikeService', '$stateParams',function($scope, NikeService,$stateParams){
 	$scope.NikeBProds = NikeService.bProdCategShoes;
+
 
 //AllShoes
 	$scope.NikeABPics = NikeService.NikeABPics;
@@ -8,6 +9,9 @@ NikeApp.controller('BoysProductController', ['$scope', 'NikeService', function($
 		return promise.then(function(result){
 			$scope.ABShoes = result;
 			combo($scope.ABShoes, $scope.NikeABPics);
+			$scope.singleItem = $scope.ABShoes.filter(function(data){
+				return data.id == $stateParams.id
+			});
 		});
 	}();
 

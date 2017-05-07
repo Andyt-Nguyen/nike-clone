@@ -161,7 +161,7 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 //NikeGirls
 	.state('gproduct', {
 		url: '/girls-shoes',
-		templateUrl: './views/productsviews/girlviews/gallshoes.html',
+		templateUrl: './views/productsviews/girlsshoes.html',
 		controller: "GirlsProdController"
 	})
 
@@ -205,12 +205,29 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 
 
 
-	.state('shoe', {
+	.state('mshoe', {
 		url:'/shoe/:id',
 		templateUrl: 'views/productsviews/productinfoview/productinfo.html',
 		controller: 'MensProdController'
 	})
 
+	.state('wshoe', {
+		url:'/wshoe/:id',
+		templateUrl:'views/productsviews/productinfoview/wproductinfo.html',
+		controller: 'WomensProdController'
+	})
+
+	.state('bshoe',{
+		url:'/bshoe/:id',
+		templateUrl: './views/productsviews/productinfoview/bproductinfo.html',
+		controller:'BoysProductController'
+	})
+
+	.state('gshoe',{
+		url:'/gshoe/:id',
+		templateUrl:'./views/productsviews/productinfoview/gproductinfo.html',
+		controller: 'GirlsProdController'
+	})
 
 
 

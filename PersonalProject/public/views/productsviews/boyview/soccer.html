@@ -42,7 +42,7 @@
 			<!-- The Real Deal Stuff -->
 			<div class="the-real-products">
 				<div ng-repeat= "shoes in SShoes">
-					<img style="padding:3%;" ng-src="{{shoes.img}}" alt="">
+					<img style="padding:3%;" ng-src="{{shoes.img}}" alt="" ui-sref="bshoe({id:shoes.id})">
 					<h5 style="margin:0; padding:0; font-size:10px;">{{shoes.name}}</h5>
 					<h6 style="margin:0; padding:0">Big Kids' Running Shoe</h6>
 					<p style="margin:0; padding:0">{{shoes.price | currency}}</p>

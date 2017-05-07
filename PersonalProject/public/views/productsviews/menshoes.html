@@ -31,30 +31,18 @@
 
 
 
-
-
-
 		<div class="the-breaker">
 		<h1>All Shoes</h1>
 		</div>
 		<!-- The Real Deal Stuff -->
 		<div class="the-real-products">
 			<div ng-repeat= "shoes in NikeMAShoes">
-				<img ng-src="{{shoes.img}}" alt="" ui-sref="shoe({id:shoes.id})">
+				<img ng-src="{{shoes.img}}" alt="" ui-sref="mshoe({id:shoes.id})">
 				<h5 style="margin:0; padding:0;">{{shoes.name}}</h5>
 				<h6 style="margin:0; padding:0">Big Kids' Running Shoe</h6>
 				<p style="margin:0; padding:0">{{shoes.price | currency}}</p>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
 	</section>
 
 

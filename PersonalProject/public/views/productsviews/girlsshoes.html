@@ -32,9 +32,9 @@
 			</div>
 			<!-- The Real Deal Stuff -->
 			<div class="the-real-products">
-				<div ng-repeat= "shoes in LSShoes">
-					<img style="padding:3%;" ng-src="{{shoes.img}}" alt="">
-					<h5 style="margin:0; padding:0">{{shoes.name}}</h5>
+				<div ng-repeat= "shoes in GAShoes">
+					<img style="padding:3%;" ng-src="{{shoes.img}}" alt="" ui-sref="gshoe({id:shoes.id})">
+					<h5 style="margin:0; padding:0; font-size:12px;">{{shoes.name}}</h5>
 					<h6 style="margin:0; padding:0">Big Kids' Running Shoe</h6>
 					<p style="margin:0; padding:0">{{shoes.price | currency}}</p>
 				</div>

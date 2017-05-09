@@ -24,6 +24,31 @@ app.get('/allshoes', function(req, res){
 	})
 });
 
+//Shopping Cart
+app.post('/shoppingcart', function(req, res){
+	var id = req.body.id;
+	var product = req.body.product_id;
+	db.addtocart([id, product]), function(err, items){
+		if(!err){
+			res.send(items);
+		} else {
+			res.send(err);
+		}
+	}
+});
+
+app.post('/getcart', function(req,res){
+	let user = req.body.user;
+		db.get_cart([user], (err, cart) => {
+			console.log(cart);
+			if (!err) {
+				res.send(cart);
+			} else {
+				res.send(err);
+			}
+		});
+});
+
 
 
 ////////////

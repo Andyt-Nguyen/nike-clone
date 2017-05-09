@@ -4,7 +4,24 @@ NikeApp.controller('MensProdController',['$scope','NikeService','$stateParams', 
 //NikeMensShoes//
 ////////////////
 
+//Add TO Cart
+$scope.buyProduct = function(product = $scope.id){
+	NikeService.buyProduct(id).then(function(response){
 
+	});
+};
+
+$scope.getCart = (user_id = $scope.user) => {
+	$scope.subtotal = 0;
+	storSrvc.getCart(user_id).then((response) => {
+		$scope.userCart = response;
+		// response.map(v=>{
+		// 	v.total = v.quantity * v.product_price
+		// 	$scope.subtotal += v.total;
+		// 	return v;
+		})
+	})
+}
 
 //All Shoes
 	$scope.AllMNikePics = NikeService.AllMNikePics;
@@ -14,8 +31,9 @@ NikeApp.controller('MensProdController',['$scope','NikeService','$stateParams', 
 			$scope.NikeMAShoes = result;
 			combo($scope.NikeMAShoes, $scope.AllMNikePics);
 			$scope.singleItem = $scope.NikeMAShoes.filter(function(data){
-				return data.id == $stateParams.id
+				return data.id === parseInt($stateParams.id);
 			});
+			console.log($scope.NikeMAShoes);
 		});
 	}();
 

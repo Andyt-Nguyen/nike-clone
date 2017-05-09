@@ -4,12 +4,37 @@ NikeApp.service('NikeService',['$http', function($http){
 //Connection To DB//
 //////////////////
 
+//Cart
+	this.buyProduct = function(id,product){
+		return $http({
+			method: 'POST',
+			url:'/shoppingcart',
+			data:{
+				id,
+				product
+			}
+		}).then(function(response){
+			return response;
+		});
+	};
+
+	this.getCart = (user) => {
+		console.log('get cart for ', user);
+		return $http({
+			method: 'POST',
+			url:'/getcart',
+			data: {
+				user
+			}
+		}).then(function(response){
+			return response.data;
+		});
+	};
+	
 //All Shoes
 	this.getAllShoes = function(){
 		return fpromise('GET','/getAllProds');
 	};
-
-
 
 ////////////
 //Nike Men//

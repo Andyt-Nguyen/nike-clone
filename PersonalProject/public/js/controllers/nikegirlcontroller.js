@@ -1,4 +1,14 @@
 NikeApp.controller('NikeGirlController',['$scope', 'NikeService', function($scope, NikeService){
+
+	function getUser() {
+	    NikeService.getUser().then(function(user) {
+	      console.log('USER DATA',user);
+	      if (user) $scope.currentUser = user;
+	      else   $scope.currentUser = 'NOT LOGGED IN';
+	    })
+	  }()
+
+
 	//Nike Shoes
 	$scope.nikeShoes = NikeService.gNikeShoes;
 		//console.log('Nike Shoes',$scope.nikeShoes);

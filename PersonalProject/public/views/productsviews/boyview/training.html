@@ -22,7 +22,7 @@
 			<div class="shopping-poster-pic-kids">
 				<div class="shopping-multi-image">
 					<div ng-repeat="nshoes in NikeBProds">
-						<img ng-src="{{nshoes.img}}" alt="">
+						<a ui-sref="{{nshoes.categ}}"><img ng-src="{{nshoes.img}}" alt=""></a>
 						<h4>{{nshoes.title}}</h4>
 					</div>
 				</div>

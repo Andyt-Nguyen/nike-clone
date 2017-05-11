@@ -232,10 +232,7 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 
 
 
-
-
-
-
+//CHECK PRODUCT ID!!!!!!
 	$urlRouterProvider
 	.otherwise('/')
 });

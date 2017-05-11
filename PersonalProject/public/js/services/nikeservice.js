@@ -5,39 +5,6 @@ NikeApp.service('NikeService',['$http', function($http){
 //////////////////
 
 
-//InTo LogOut
-this.getUser = function() {
-  return $http({
-    method: 'GET',
-    url: '/auth/me'
-  })
-  .then(function(res) {
-    // console.log(res.data);
-    return res.data;
-  })
-  .catch(function(err) {
-    console.log(err);
-  })
-}
-
-this.logout = function() {
-  console.log('button works');
-  return $http({
-    method: 'GET',
-    url: '/auth/logout'
-  })
-  .then(function(res) {
-    return res.data;
-  })
-  .catch(function(err) {
-    console.log(err);
-  })
-}
-
-
-
-
-
 //Cart
 	// this.buyProduct = function(id,product){
 	// 	return $http({
@@ -80,7 +47,6 @@ this.logout = function() {
 
 
 //MLifeStyle
-
 	this.getNikeMLSShoes = function(){
 		return fpromise('GET','/nikemlsshoes');
 	}
@@ -393,6 +359,39 @@ this.logout = function() {
 		 return promise.then(function(result){
 			return result.data;
 		})
+	};
+
+
+
+
+
+	//InTo LogOut
+	this.getUser = function() {
+	  return $http({
+	    method: 'GET',
+	    url: '/auth/me'
+	  })
+	  .then(function(res) {
+	    // console.log(res.data);
+	    return res.data;
+	  })
+	  .catch(function(err) {
+	    console.log(err);
+	  })
+	};
+
+	this.logout = function() {
+	  console.log('button works');
+	  return $http({
+	    method: 'GET',
+	    url: '/auth/logout'
+	  })
+	  .then(function(res) {
+	    return res.data;
+	  })
+	  .catch(function(err) {
+	    console.log(err);
+	  })
 	};
 
 }]);

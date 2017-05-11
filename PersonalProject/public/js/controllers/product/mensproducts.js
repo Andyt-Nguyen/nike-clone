@@ -4,23 +4,13 @@ NikeApp.controller('MensProdController',['$scope','NikeService','$stateParams', 
 //NikeMensShoes//
 ////////////////
 
-function getUser() {
-    NikeService.getUser().then(function(user) {
-      console.log('USER DATA',user);
-      if (user) $scope.currentUser = user;
-      else   $scope.currentUser = 'NOT LOGGED IN';
-    })
-  }();
-
-
-
 
 //Add TO Cart
-$scope.buyProduct = function(product = $scope.id){
-	NikeService.buyProduct(id).then(function(response){
-
-	});
-};
+// $scope.buyProduct = function(product = $scope.id){
+// 	NikeService.buyProduct(id).then(function(response){
+//
+// 	});
+// };
 
 // $scope.getCart = (user_id = $scope.user) => {
 // 	$scope.subtotal = 0;
@@ -40,10 +30,11 @@ $scope.buyProduct = function(product = $scope.id){
 		return promise.then(function(result){
 			$scope.NikeMAShoes = result;
 			$scope.singleItem = $scope.NikeMAShoes.filter(function(data){
-				return data.id === parseInt($stateParams.id);
+				return data.product_id === parseInt($stateParams.id);
 			});
 		});
-	}();
+	};
+	$scope.getNikeMAShoes()
 
 //LifeStyle
 	$scope.getNikeMLSShoes = function(){
@@ -94,4 +85,15 @@ $scope.buyProduct = function(product = $scope.id){
 			a[i].img = b[i].img
 		}
 	}
+
+
+	function getUser() {
+	    NikeService.getUser().then(function(user) {
+	      console.log('USER DATA',user);
+	      if (user) $scope.currentUser = user;
+	      else   $scope.currentUser = 'NOT LOGGED IN';
+	    })
+	  };
+
+		getUser();
 }]);

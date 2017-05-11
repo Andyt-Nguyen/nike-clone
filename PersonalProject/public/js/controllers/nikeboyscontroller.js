@@ -1,14 +1,5 @@
 NikeApp.controller('NikeBoysController', ['$scope', 'NikeService', function($scope, NikeService){
 
-	function getUser() {
-	    NikeService.getUser().then(function(user) {
-	      console.log('USER DATA',user);
-	      if (user) $scope.currentUser = user;
-	      else   $scope.currentUser = 'NOT LOGGED IN';
-	    })
-	  }()
-
-
 
 	// Nike Shoes
 	$scope.nikeShoes = NikeService.bNikeShoes;
@@ -25,5 +16,15 @@ NikeApp.controller('NikeBoysController', ['$scope', 'NikeService', function($sco
 	//Nike Best Of
 	$scope.bestNike = NikeService.bestOfNike;
 		//console.log($scope.bestNike);
+
+
+		function getUser() {
+		    NikeService.getUser().then(function(user) {
+		      console.log('USER DATA',user);
+		      if (user) $scope.currentUser = user;
+		      else   $scope.currentUser = 'NOT LOGGED IN';
+		    })
+		  };
+		getUser();
 
 }]);

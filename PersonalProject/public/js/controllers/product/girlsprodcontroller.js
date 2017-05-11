@@ -1,14 +1,5 @@
 NikeApp.controller('GirlsProdController', ['$scope', 'NikeService','$stateParams', function($scope, NikeService, $stateParams){
 
-	function getUser() {
-	    NikeService.getUser().then(function(user) {
-	      console.log('USER DATA',user);
-	      if (user) $scope.currentUser = user;
-	      else   $scope.currentUser = 'NOT LOGGED IN';
-	    })
-	  }();
-
-
 
 //Intro To the Nike Girl Products Page
 	$scope.gProdShoes = NikeService.gprodCategShoes;
@@ -22,7 +13,7 @@ NikeApp.controller('GirlsProdController', ['$scope', 'NikeService','$stateParams
 		return promise.then(function(response){
 			$scope.GAShoes = response;
 			$scope.singleItem = $scope.GAShoes.filter(function(data){
-				return data.id == $stateParams.id
+				return data.product_id == $stateParams.id
 			});
 		});
 	}();
@@ -75,6 +66,15 @@ NikeApp.controller('GirlsProdController', ['$scope', 'NikeService','$stateParams
 			a[i].img = b[i].img
 		}
 	}
+
+	function getUser() {
+	    NikeService.getUser().then(function(user) {
+	      console.log('USER DATA',user);
+	      if (user) $scope.currentUser = user;
+	      else   $scope.currentUser = 'NOT LOGGED IN';
+	    })
+	  };
+	getUser();
 
 
 }]);

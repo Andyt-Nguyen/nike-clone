@@ -134,7 +134,7 @@ app.get('/allshoes', function(req, res){
 // 		}
 // 	}
 // });
-
+//
 // app.post('/getcart', function(req,res){
 // 	let user = req.body.user;
 // 		db.get_cart([user], (err, cart) => {

@@ -1,4 +1,4 @@
 SELECT * FROM nikeproducts
 WHERE gender = 'girls'
-ORDER BY id ASC
+ORDER BY product_id  ASC
 LIMIT 60

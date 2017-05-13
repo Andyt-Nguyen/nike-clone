@@ -1,7 +1,13 @@
 NikeApp.controller('BoysProductController', ['$scope', 'NikeService', '$stateParams',function($scope, NikeService,$stateParams){
 	$scope.NikeBProds = NikeService.bProdCategShoes;
-
-
+	$scope.add = "Add To Cart"
+	$scope.addToCart = function(item){
+		$scope.add = "Added"
+		$scope.addon = true;
+		console.log(item);
+		NikeService.addToCart.push(item);
+		console.log(NikeService.addToCart);
+	}
 
 //AllShoes
 	$scope.getABShoes = function(){

@@ -60,7 +60,6 @@
 
 
 .product-view-size {
-	flex:1;
 	display: flex;
 	justify-content: center;
 	background: #dddddd;
@@ -69,7 +68,6 @@
 }
 
 .product-view-cart {
-	flex:1;
 	display: flex;
 	justify-content: center;
 	background: #fa5400;

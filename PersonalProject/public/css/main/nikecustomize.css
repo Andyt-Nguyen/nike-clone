@@ -11,6 +11,7 @@
 	align-items: center;
 }
 
+
 .customize-nav-ind {
 	margin-top: 3%;
 	width: 30%;
@@ -19,12 +20,21 @@
 	justify-content: space-around;
 }
 
-.ind {
+.ind{
 	text-decoration: none;
 	text-align: center;
 	color: #222222;
 	flex: 1;
 	text-decoration: none;
+	transition: .4s;
+	transform: skewY(20px);
+}
+
+.ind:hover {
+	color:#000;
+	font-size: 17px;
+	text-decoration: none;
+
 }
 
 .ind-border {

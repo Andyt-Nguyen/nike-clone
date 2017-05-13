@@ -17,6 +17,6 @@ NikeApp.controller('NikeWomenController',['$scope','NikeService', function($scop
 	      else   $scope.currentUser = 'NOT LOGGED IN';
 	    })
 	  }
-	getUser();
+	getUser()
 
 }]);

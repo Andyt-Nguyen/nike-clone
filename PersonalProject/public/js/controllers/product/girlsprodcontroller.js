@@ -1,6 +1,15 @@
 NikeApp.controller('GirlsProdController', ['$scope', 'NikeService','$stateParams', function($scope, NikeService, $stateParams){
 
 
+	$scope.add = "Add To Cart"
+	$scope.addToCart = function(item){
+		$scope.add = "Added"
+		$scope.addon = true;
+		console.log(item);
+		NikeService.addToCart.push(item);
+		console.log(NikeService.addToCart);
+	}
+
 //Intro To the Nike Girl Products Page
 	$scope.gProdShoes = NikeService.gprodCategShoes;
 
@@ -11,7 +20,9 @@ NikeApp.controller('GirlsProdController', ['$scope', 'NikeService','$stateParams
 	$scope.getGAShoes = function(){
 		var promise = NikeService.getNikeGAShoes();
 		return promise.then(function(response){
+			console.log('RESPONSE GIRLS', response);
 			$scope.GAShoes = response;
+			console.log($scope.GAShoes);
 			$scope.singleItem = $scope.GAShoes.filter(function(data){
 				return data.product_id == $stateParams.id
 			});

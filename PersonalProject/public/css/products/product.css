@@ -141,16 +141,17 @@
 .the-real-products img{
 	width:218px;
 	height:220px;
+	transition: .4s;
+	transform: translateZ(20px);
+	padding: 02px;
 }
 
-.the-real-products img:hover{
-	padding: 4%;
-}
 
 .the-real-products img:hover{
 	cursor: pointer;
-	border: 2px solid #ccc;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 	height: 226px;
 }
+
 /*---------------- Right Hand Column ---------------- */

@@ -63,10 +63,6 @@
 	background: white;
 }
 
-.underline:hover{
-	border-bottom: 2px solid black;
-}
-
 .logo {
 	flex: 1;
 	padding-left: 20px;
@@ -91,6 +87,12 @@
 	text-decoration: none;
 	color: black;
 	padding: 10px;
+	transition: .4s;
+	transform: translateZ(20px);
+}
+
+.categories a:hover {
+	font-size: 28px;
 }
 
 .search {

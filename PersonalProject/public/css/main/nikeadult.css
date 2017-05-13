@@ -32,6 +32,14 @@
 	font-size: 14px;
 	text-transform: capitalize;
 	font-family: 'Lato';
+	transition: .4s;
+	transform: skewY(20px);
+}
+
+.adult-nav .adult-nav-text:hover {
+	color:black;
+	font-size: 17px;
+	text-decoration: none;
 }
 
 .adult-border {

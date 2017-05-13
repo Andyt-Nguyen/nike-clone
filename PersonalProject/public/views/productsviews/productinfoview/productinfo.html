@@ -40,13 +40,9 @@
 <!-- Buttons Size/AddCart -->
 		<div class="productview-mini-buttons">
 			<button class="product-view-size">One Size Fits All</button>
-			<form ng-submit="buyProduct(singleItem.product)">
-				<button class="product-view-cart">Add To Cart</button>
-			</form>
+			<button class="product-view-cart" ng-click="addToCart(singleItem[0])">{{add}}</button>
 		</div>
 	</div>
 </section>
-
-
 
 <!-- Notes -->

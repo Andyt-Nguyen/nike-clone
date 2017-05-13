@@ -4,8 +4,26 @@ NikeApp.service('NikeService',['$http', function($http){
 //Connection To DB//
 //////////////////
 
-
 //Cart
+
+this.addToCart = [];
+this.addToHistory = function(id){
+	for (var i=0; i< this.addToCart.length; i++) {
+	var request = {
+		user_id:id,
+		product_id: this.addToCart[i].product_id
+	}
+	console.log(request);
+	$http({
+		method: 'POST',
+		url:'/history',
+		data:request
+	})
+	}
+	this.addToCart=[];
+}
+
+
 	// this.buyProduct = function(id,product){
 	// 	return $http({
 	// 		method: 'POST',
@@ -18,7 +36,8 @@ NikeApp.service('NikeService',['$http', function($http){
 	// 		return response;
 	// 	});
 	// };
-
+	//
+	//
 	// this.getCart = (user) => {
 	// 	console.log('get cart for ', user);
 	// 	return $http({
@@ -36,6 +55,8 @@ NikeApp.service('NikeService',['$http', function($http){
 	this.getAllShoes = function(){
 		return fpromise('GET','/getAllProds');
 	};
+
+
 
 ////////////
 //Nike Men//
@@ -372,8 +393,9 @@ NikeApp.service('NikeService',['$http', function($http){
 	    url: '/auth/me'
 	  })
 	  .then(function(res) {
-	    // console.log(res.data);
-	    return res.data;
+	    console.log(res.data);
+	    this.user_id=res.data.user_id;
+			return res.data;
 	  })
 	  .catch(function(err) {
 	    console.log(err);

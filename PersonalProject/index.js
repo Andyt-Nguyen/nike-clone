@@ -42,6 +42,7 @@ function(accessToken, refreshToken, extraParams, profile, done) {
   // console.log(profile);
   db.getUserByAuthId([profile.id], function(err, user) {
     user = user[0];
+		// console.log(profile);
     if (!user) { //if there isn't one, we'll create one!
     console.log('CREATING USER');
     if (profile.name.familyName && profile.name.givenName) {
@@ -112,7 +113,11 @@ app.get('/auth/logout', function(req, res) {
   res.redirect('/');
 })
 
-
+app.get('/username', function(req, res){
+	db.login(function(err, username){
+		res.send(username)
+	});
+});
 
 
 // Endpoints
@@ -123,6 +128,15 @@ app.get('/allshoes', function(req, res){
 });
 
 //Shopping Cart
+app.post('/history', function(req,res){
+	db.addtohistory([req.body.user_id, req.body.product_id], function(err,history){
+		if (err) {
+			console.log(err);
+		}
+		res.send(history);
+	});
+});
+
 // app.post('/shoppingcart', function(req, res){
 // 	var id = req.body.id;
 // 	var product = req.body.product_id;
@@ -148,7 +162,6 @@ app.get('/allshoes', function(req, res){
 // });
 
 
-
 ////////////
 //NikeMen//
 //////////
@@ -160,6 +173,7 @@ app.get('/nikemshoes', function(req, res){
 
 app.get('/nikemlsshoes', function(req,res){
 	db.menslifestyle(function(err, shoes){
+		// console.log(shoes);
 		res.send(shoes);
 	});
 });
@@ -248,7 +262,7 @@ app.get('/nikeblsshoes', function(req, res){
 
 app.get('/nikebrunning', function(req, res){
 	db.boysrunning(function(err, shoes){
-		console.log(shoes);
+		// console.log(shoes);
 		res.send(shoes);
 	})
 })
@@ -279,6 +293,7 @@ app.get('/niketraining', function(req, res){
 ///////////
 app.get('/nikegshoes', function(req, res){
 	db.girlproducts(function(err, shoes){
+		// console.log('INDEX', shoes);
 		res.send(shoes)
 	});
 });

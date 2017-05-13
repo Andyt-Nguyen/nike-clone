@@ -6,20 +6,33 @@ NikeApp.controller('MensProdController',['$scope','NikeService','$stateParams', 
 
 
 //Add TO Cart
-// $scope.buyProduct = function(product = $scope.id){
-// 	NikeService.buyProduct(id).then(function(response){
-//
+$scope.add = "Add To Cart"
+$scope.addToCart = function(item){
+	$scope.add = "Added"
+	$scope.addon = true;
+	console.log(item);
+	NikeService.addToCart.push(item);
+	console.log(NikeService.addToCart);
+}
+
+
+
+
+
+// $scope.buyProduct = function(product = $scope.product_id){
+// 	NikeService.buyProduct(product).then(function(response){
+// 		return response;
 // 	});
 // };
-
+//
 // $scope.getCart = (user_id = $scope.user) => {
 // 	$scope.subtotal = 0;
-// 	storSrvc.getCart(user_id).then((response) => {
+// 	NikeService.getCart(user_id).then((response) => {
 // 		$scope.userCart = response;
-// 		// response.map(v=>{
-// 		// 	v.total = v.quantity * v.product_price
-// 		// 	$scope.subtotal += v.total;
-// 		// 	return v;
+// 		response.map(v=>{
+// 			v.total = v.quantity * v.product_price
+// 			$scope.subtotal += v.total;
+// 			return v;
 // 		})
 // 	})
 // }

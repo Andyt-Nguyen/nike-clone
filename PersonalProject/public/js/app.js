@@ -1,5 +1,13 @@
 var NikeApp = angular.module('NikeApp',['ui.router', 'ngAnimate']);
 
+NikeApp.run(function($rootScope, $state, $stateParams){
+  $rootScope.$state = $state;
+  $rootScope.$stateParams = $stateParams;
+  $rootScope.$on('$stateChangeSuccess', function() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  });
+});
+
 NikeApp.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
 	.state('home',{
@@ -72,8 +80,6 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 		templateUrl:'./views/productsviews/mensviews/training.html',
 		controller:'MensProdController'
 	})
-
-
 
 
 
@@ -192,17 +198,13 @@ NikeApp.config(function($stateProvider, $urlRouterProvider){
 	//CheckOut Views
 	.state('checkout', {
 		url: "/checkout",
-		templateUrl: "views/productsviews/checkout.html"
+		templateUrl: "views/productsviews/checkout.html",
+		controller:'CheckOutController'
 	})
 	.state('success', {
 		url: '/success',
 		templateUrl: "views/productsviews/success.html"
 	})
-
-
-
-
-
 
 
 	.state('mshoe', {

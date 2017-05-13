@@ -1,4 +1,6 @@
-/* This css file effects all MWBG */
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/* This css file effects all MWBGS */
 
 
 /* ngAnimate Through Pages*/
@@ -76,4 +78,28 @@ main.ng-enter.ng-enter-active{
 	opacity: 1;
 	background-color: black;
 	color: white;
+}
+
+/*Success*/
+.success-section {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.success-section img{
+	width: 200px;
+	height: 55px;
+}
+
+.success-section h3 {
+	font-family:"Fjalla One";
+	text-transform: uppercase;
+	color: #000;
+}
+
+.success-section p {
+	font-family: "Lato";
+	padding:0;
+	margin:0;
 }

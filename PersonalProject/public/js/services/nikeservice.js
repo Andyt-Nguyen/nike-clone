@@ -8,7 +8,7 @@ NikeApp.service('NikeService',['$http', function($http){
 
 this.addToCart = [];
 this.addToHistory = function(id){
-	for (var i=0; i< this.addToCart.length; i++) {
+	for (var i = 0; i < this.addToCart.length; i++) {
 	var request = {
 		user_id:id,
 		product_id: this.addToCart[i].product_id
